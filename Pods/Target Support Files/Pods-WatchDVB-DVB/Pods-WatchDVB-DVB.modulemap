@@ -1,5 +1,5 @@
 framework module DVB {
-  umbrella header "DVB-umbrella.h"
+  umbrella header "Pods-WatchDVB-DVB-umbrella.h"
 
   export *
   module * { export * }
