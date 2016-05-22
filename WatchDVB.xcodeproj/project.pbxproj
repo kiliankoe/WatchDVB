@@ -87,6 +87,8 @@
 		393049681CF1D8AF001B0D67 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		3930496A1CF1D8AF001B0D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3930496C1CF1D8AF001B0D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3930497A1CF1DD7B001B0D67 /* WatchDVB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchDVB.entitlements; sourceTree = "<group>"; };
+		3930497B1CF1DE80001B0D67 /* WatchDVB WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchDVB WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		3930493A1CF1D8AF001B0D67 /* WatchDVB */ = {
 			isa = PBXGroup;
 			children = (
+				3930497A1CF1DD7B001B0D67 /* WatchDVB.entitlements */,
 				3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */,
 				3930493D1CF1D8AF001B0D67 /* ViewController.swift */,
 				3930493F1CF1D8AF001B0D67 /* Main.storyboard */,
@@ -153,6 +156,7 @@
 		3930495D1CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3930497B1CF1DE80001B0D67 /* WatchDVB WatchKit Extension.entitlements */,
 				393049601CF1D8AF001B0D67 /* InterfaceController.swift */,
 				393049621CF1D8AF001B0D67 /* ExtensionDelegate.swift */,
 				393049641CF1D8AF001B0D67 /* NotificationController.swift */,
@@ -241,12 +245,24 @@
 				TargetAttributes = {
 					393049371CF1D8AF001B0D67 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HU85FER47E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					393049491CF1D8AF001B0D67 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					393049581CF1D8AF001B0D67 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HU85FER47E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -452,9 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements";
 				INFOPLIST_FILE = "WatchDVB WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -467,9 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements";
 				INFOPLIST_FILE = "WatchDVB WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -514,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchDVB/WatchDVB.entitlements;
 				INFOPLIST_FILE = WatchDVB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB;
@@ -525,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchDVB/WatchDVB.entitlements;
 				INFOPLIST_FILE = WatchDVB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB;
