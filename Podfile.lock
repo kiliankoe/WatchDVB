@@ -1,0 +1,13 @@
+PODS:
+  - DVB (0.6.0):
+    - Kanna (~> 1.0.6)
+  - Kanna (1.0.6)
+
+DEPENDENCIES:
+  - DVB (~> 0.6.0)
+
+SPEC CHECKSUMS:
+  DVB: 6a1c02868d6eaeae09dd579034ac6d294c6fa59b
+  Kanna: 9f30945bbd293a609f698ea164687ccc0990ff60
+
+COCOAPODS: 0.39.0

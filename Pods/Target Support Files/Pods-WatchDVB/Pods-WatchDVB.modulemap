@@ -1,0 +1,6 @@
+framework module Pods_WatchDVB {
+  umbrella header "Pods-WatchDVB-umbrella.h"
+
+  export *
+  module * { export * }
+}
