@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Defaults.switchOnLocation: false
         ])
 
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: nil))
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Sound, UIUserNotificationType.Alert], categories: nil))
 
         WatchSessionManager.shared.startSession()
 

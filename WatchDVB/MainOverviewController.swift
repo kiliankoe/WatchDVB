@@ -70,12 +70,13 @@ extension MainOverviewController {
         }
 
         let departure = currentDepartures[indexPath.row]
+        let notificationOffset = 10 // minutes
 
         // No need scheduling a notification if the departure is about to leave
-        guard departure.minutesUntil > 5 else { return }
+        guard departure.minutesUntil > notificationOffset else { return }
 
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: Double(departure.minutesUntil) * 60)
+        notification.fireDate = departure.leavingDate.dateByAddingTimeInterval(-1 * Double(notificationOffset) * 60)
 
         var text = ""
         switch departure.type {
@@ -86,10 +87,12 @@ extension MainOverviewController {
         default:
             text += "Deine Verbindung "
         }
-        text += "fährt in 5 Minuten von der Haltestelle \(Stop.selected().name)"
+        text += "fährt in \(notificationOffset) Minuten von der Haltestelle \(Stop.selected().name)"
 
         notification.alertBody = text
         notification.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        print("Scheduled local notification \(notification)")
     }
 }
