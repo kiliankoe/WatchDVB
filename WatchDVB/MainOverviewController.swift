@@ -39,6 +39,7 @@ class MainOverviewController: UITableViewController {
     }
 }
 
+// MARK: - Table View Data Source
 extension MainOverviewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -57,5 +58,38 @@ extension MainOverviewController {
         cell.detailTextLabel?.text = dep.minutesUntil == 0 ? "jetzt" : "in \(dep.minutesUntil) min."
 
         return cell
+    }
+}
+
+// MARK: - Table View Delegate
+extension MainOverviewController {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        defer {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
+
+        let departure = currentDepartures[indexPath.row]
+
+        // No need scheduling a notification if the departure is about to leave
+        guard departure.minutesUntil > 5 else { return }
+
+        let notification = UILocalNotification()
+        notification.fireDate = NSDate(timeIntervalSinceNow: Double(departure.minutesUntil) * 60)
+
+        var text = ""
+        switch departure.type {
+        case .Some(.Stadtbus):
+            text += "Dein Bus "
+        case .Some(.Strassenbahn):
+            text += "Deine Bahn "
+        default:
+            text += "Deine Verbindung "
+        }
+        text += "fährt in 5 Minuten von der Haltestelle \(Stop.selected().name)"
+
+        notification.alertBody = text
+        notification.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 }
