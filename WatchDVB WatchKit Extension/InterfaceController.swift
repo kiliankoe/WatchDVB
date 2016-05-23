@@ -11,10 +11,22 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var table: WKInterfaceTable!
+
+    var deps = ["85 Löbtau", "85 Btf. Gruna", "85 Striesen"]
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        setupTable()
+    }
 
-        // Configure interface objects here.
+    func setupTable() {
+        table.setNumberOfRows(3, withRowType: "departureRow")
+        for (idx, dep) in deps.enumerate() {
+            if let row = table.rowControllerAtIndex(idx) as? DepartureRow {
+                row.textLabel.setText(dep)
+            }
+        }
     }
 
     override func willActivate() {
@@ -25,6 +37,10 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        print(rowIndex)
     }
 
 }

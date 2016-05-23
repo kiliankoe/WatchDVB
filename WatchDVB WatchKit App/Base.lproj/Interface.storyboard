@@ -8,7 +8,29 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchDVB_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchDVB_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Thk-dy-LYj">
+                            <items>
+                                <tableRow identifier="departureRow" id="Axu-f6-XxH" customClass="DepartureRow" customModule="WatchDVB_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="iWO-KF-14I">
+                                        <items>
+                                            <imageView width="20" height="20" alignment="left" verticalAlignment="center" id="L62-7h-tVT"/>
+                                            <label alignment="left" verticalAlignment="center" text="85 Löbtau" id="uPl-3d-1gd"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imageView" destination="L62-7h-tVT" id="Len-WQ-GlV"/>
+                                        <outlet property="textLabel" destination="uPl-3d-1gd" id="eGZ-Nz-Ltt"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Thk-dy-LYj" id="Sdf-Hd-EPb"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
