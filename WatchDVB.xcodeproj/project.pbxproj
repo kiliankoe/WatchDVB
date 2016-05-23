@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08A986A87F25DD0EB63341DC /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F762BB753141EA7D614000CD /* Pods_WatchDVB_WatchKit_Extension.framework */; };
-		1CA0593A3E3FDC7285CD1F88 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3D14BA49598FAE28FFA12 /* Pods.framework */; };
 		3930493C1CF1D8AF001B0D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */; };
 		393049411CF1D8AF001B0D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930493F1CF1D8AF001B0D67 /* Main.storyboard */; };
 		393049431CF1D8AF001B0D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393049421CF1D8AF001B0D67 /* Assets.xcassets */; };
@@ -111,13 +109,9 @@
 		394692111CF3700D009102D8 /* UIImage+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Text.swift"; sourceTree = "<group>"; };
 		394692141CF37B57009102D8 /* AddNewStopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewStopController.swift; sourceTree = "<group>"; };
 		394692161CF37B85009102D8 /* ImageRightsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRightsController.swift; sourceTree = "<group>"; };
-		47AFEC2373F3F00B80D65311 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		57B3D14BA49598FAE28FFA12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		AE8F1A3A7863B54BAB6F2BA9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F762BB753141EA7D614000CD /* Pods_WatchDVB_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA0593A3E3FDC7285CD1F88 /* Pods.framework in Frameworks */,
 				9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A986A87F25DD0EB63341DC /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,12 +160,10 @@
 			children = (
 				3930497A1CF1DD7B001B0D67 /* WatchDVB.entitlements */,
 				3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */,
-				394692051CF322E0009102D8 /* Defaults.swift */,
-				394692031CF32028009102D8 /* Stop+UserDefaults.swift */,
 				3946920B1CF34F0A009102D8 /* WatchSessionManager.swift */,
-				394692111CF3700D009102D8 /* UIImage+Text.swift */,
 				394691FC1CF31554009102D8 /* MainOverviewController.swift */,
 				394692001CF316E6009102D8 /* Settings */,
+				394692181CF386D4009102D8 /* Util */,
 				3930493F1CF1D8AF001B0D67 /* Main.storyboard */,
 				393049421CF1D8AF001B0D67 /* Assets.xcassets */,
 				393049441CF1D8AF001B0D67 /* LaunchScreen.storyboard */,
@@ -227,11 +217,19 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		394692181CF386D4009102D8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				394692051CF322E0009102D8 /* Defaults.swift */,
+				394692031CF32028009102D8 /* Stop+UserDefaults.swift */,
+				394692111CF3700D009102D8 /* UIImage+Text.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		8D6FF955EE6DE64DAF1C856C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				47AFEC2373F3F00B80D65311 /* Pods.debug.xcconfig */,
-				AE8F1A3A7863B54BAB6F2BA9 /* Pods.release.xcconfig */,
 				790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */,
 				9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */,
 				260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */,
@@ -243,9 +241,7 @@
 		D5F2DB1A2463653920ACD8CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57B3D14BA49598FAE28FFA12 /* Pods.framework */,
 				5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */,
-				F762BB753141EA7D614000CD /* Pods_WatchDVB_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
