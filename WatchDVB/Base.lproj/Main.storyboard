@@ -101,10 +101,128 @@
                             <outlet property="delegate" destination="b5V-z7-oYm" id="yYc-f2-OeB"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="6tt-OG-Iax" kind="show" identifier="showAddNewStop" id="1fO-nI-FdM"/>
+                        <segue destination="u29-FG-MxH" kind="show" identifier="showImageRights" id="ICz-tO-FhX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU1-PE-BDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2937" y="467"/>
+        </scene>
+        <!--Add New Stop Controller-->
+        <scene sceneID="oIX-im-qub">
+            <objects>
+                <tableViewController id="6tt-OG-Iax" customClass="AddNewStopController" customModule="WatchDVB" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Jw-p5-C8f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Haltestelle suchen..." id="1Q6-jB-faI">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="6tt-OG-Iax" id="bES-S1-O0Y"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eQl-fG-nFi">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eQl-fG-nFi" id="IP1-A1-NQC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6tt-OG-Iax" id="ywC-t1-LHN"/>
+                            <outlet property="delegate" destination="6tt-OG-Iax" id="PAM-cp-PBM"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="9V9-zR-nG1" id="Ct2-o7-HRe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGa-rf-Vk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="9V9-zR-nG1">
+                    <connections>
+                        <outlet property="delegate" destination="6tt-OG-Iax" id="c58-yA-oYI"/>
+                        <outlet property="searchBar" destination="1Q6-jB-faI" id="1h5-tt-sfW"/>
+                        <outlet property="searchContentsController" destination="6tt-OG-Iax" id="yOw-wq-yo5"/>
+                        <outlet property="searchResultsDataSource" destination="6tt-OG-Iax" id="4j1-L5-PI3"/>
+                        <outlet property="searchResultsDelegate" destination="6tt-OG-Iax" id="LJL-2k-m5a"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="3695" y="124"/>
+        </scene>
+        <!--Image Rights Controller-->
+        <scene sceneID="hBv-OI-fL7">
+            <objects>
+                <tableViewController id="u29-FG-MxH" customClass="ImageRightsController" customModule="WatchDVB" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PeA-rS-GJq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="Ywg-GS-SU6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="aYd-0W-jEJ" imageView="O1j-vn-2hm" style="IBUITableViewCellStyleDefault" id="Ht5-9B-ifb">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ht5-9B-ifb" id="6MB-ah-hNp">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Setting By Chameleon Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aYd-0W-jEJ">
+                                                    <rect key="frame" x="53" y="0.0" width="532" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cogwheel" id="O1j-vn-2hm">
+                                                    <rect key="frame" x="15" y="10" width="23" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lhF-MI-2NQ" imageView="vbH-sI-pkN" style="IBUITableViewCellStyleDefault" id="YbC-dq-rmC">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YbC-dq-rmC" id="amo-CE-SYU">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Bus By Jens Tärning, SE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lhF-MI-2NQ">
+                                                    <rect key="frame" x="52" y="0.0" width="533" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bus" id="vbH-sI-pkN">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="u29-FG-MxH" id="Mfq-ZL-NjO"/>
+                            <outlet property="delegate" destination="u29-FG-MxH" id="haZ-t0-ZEM"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cf4-H3-leB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3695" y="829"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LAM-uL-Ray">
@@ -126,6 +244,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bus" width="22" height="22"/>
         <image name="cogwheel" width="23" height="22"/>
     </resources>
 </document>
