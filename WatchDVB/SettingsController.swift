@@ -87,6 +87,8 @@ class SettingsController: UITableViewController {
                 performSegueWithIdentifier("showAddNewStop", sender: self)
             } else {
                 // This is a normal stop cell
+                Stop.setSelected(indexPath.row)
+                tableView.reloadData()
             }
         case 1:
             switch indexPath.row {

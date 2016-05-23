@@ -85,4 +85,9 @@ extension Stop {
         NSUserDefaults.standardUserDefaults().setObject(stop.name, forKey: Defaults.selectedStopName)
         NSUserDefaults.standardUserDefaults().synchronize()
     }
+
+    static func setSelected(idx: Int) {
+        let stop = forIndex(idx)
+        setSelected(stop)
+    }
 }

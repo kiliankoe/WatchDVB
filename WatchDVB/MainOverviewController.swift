@@ -13,8 +13,8 @@ class MainOverviewController: UITableViewController {
 
     var currentDepartures = [Departure]()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
 
         navigationItem.title = Stop.selected().name
         refreshDVB()
