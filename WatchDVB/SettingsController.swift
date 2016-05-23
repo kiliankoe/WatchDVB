@@ -8,6 +8,7 @@
 
 import UIKit
 import DVB
+import MessageUI
 
 class SettingsController: UITableViewController {
 
@@ -29,7 +30,7 @@ class SettingsController: UITableViewController {
         case 0:
             return Stop.allSaved().count + 1 // Add cell for adding new stops
         default:
-            return 2
+            return 3
         }
     }
 
@@ -68,6 +69,9 @@ class SettingsController: UITableViewController {
             case 1:
                 cell.textLabel?.text = "Bildrechte"
                 cell.accessoryType = .DisclosureIndicator
+            case 2:
+                cell.textLabel?.text = "Feedback"
+                cell.accessoryType = .DisclosureIndicator
             default:
                 break
             }
@@ -96,6 +100,14 @@ class SettingsController: UITableViewController {
                 break
             case 1:
                 performSegueWithIdentifier("showImageRights", sender: self)
+            case 2:
+                if MFMailComposeViewController.canSendMail() {
+                    let emailVC = MFMailComposeViewController()
+                    emailVC.mailComposeDelegate = self
+                    emailVC.setSubject("WatchDVB Feedback")
+                    emailVC.setToRecipients(["watchdvb@kilian.io"])
+                    presentViewController(emailVC, animated: true, completion: nil)
+                }
             default:
                 break
             }
@@ -115,5 +127,11 @@ class SettingsController: UITableViewController {
             Stop.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
+    }
+}
+
+extension SettingsController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
