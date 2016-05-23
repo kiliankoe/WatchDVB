@@ -125,6 +125,7 @@ class SettingsController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             Stop.removeAtIndex(indexPath.row)
+            // FIXME: This currently leads to a crash if the currently selected stop is removed
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
