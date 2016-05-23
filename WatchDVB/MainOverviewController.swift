@@ -16,7 +16,7 @@ class MainOverviewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = getSelectedStop().name
+        navigationItem.title = Stop.selected().name
         refreshDVB()
     }
 
@@ -24,14 +24,8 @@ class MainOverviewController: UITableViewController {
         refreshDVB()
     }
 
-    func getSelectedStop() -> Stop {
-        let selectedStopIndex = NSUserDefaults.standardUserDefaults().integerForKey(Defaults.selectedStopIndex)
-        let savedStops = NSUserDefaults.standardUserDefaults().arrayForKey(Defaults.savedStops) as! [NSDictionary]
-        return Stop.fromDict(savedStops[selectedStopIndex])
-    }
-
     func refreshDVB() {
-        let selectedStop = getSelectedStop()
+        let selectedStop = Stop.selected()
 
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         DVB.monitor(selectedStop.name, city: selectedStop.region) { (departures) in

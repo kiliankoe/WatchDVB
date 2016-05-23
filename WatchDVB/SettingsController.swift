@@ -11,14 +11,8 @@ import DVB
 
 class SettingsController: UITableViewController {
 
-    var savedStops: [Stop]!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // TODO: Get saved stops from NSUserDefaults and store in savedStops
-        let helmholtz = Stop(id: 0, name: "Helmholtzstraße", region: "Dresden", searchString: "", tarifZones: "", longitude: 1.0, latitude: 1.0, priority: 0)
-        savedStops = [helmholtz]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -36,33 +30,52 @@ class SettingsController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 1
-        case 1:
-            return 2
+            return Stop.allSaved().count + 1 // Add cell for adding new stops
         default:
-            return 0
+            return 2
+        }
+    }
+
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Haltestellen"
+        default:
+            return "Einstellungen"
         }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") ?? UITableViewCell()
 
-        if indexPath.section == 0 {
-            cell = tableView.dequeueReusableCellWithIdentifier(String(StopSelectionCell)) ?? StopSelectionCell()
-            cell.textLabel?.text = savedStops[indexPath.row].description
-        } else if indexPath.section == 1 {
-            cell = UITableViewCell()
+        // Normalize reused cells
+        cell.detailTextLabel?.text = ""
+        cell.imageView?.image = nil
+        cell.accessoryType = .None
+
+        switch indexPath.section {
+        case 0:
+            if indexPath.row >= Stop.allSaved().count {
+                // This is the "Add new Stop" cell
+                cell.textLabel?.text = "Neue Haltestelle hinzufügen..."
+                cell.accessoryType = .DisclosureIndicator
+            } else {
+                // This is a normal stop cell
+                cell.textLabel?.text = Stop.allSaved()[indexPath.row].description
+                cell.accessoryType = Stop.selectedIndex() == indexPath.row ? .Checkmark : .None
+            }
+        case 1:
             switch indexPath.row {
             case 0:
                 cell.textLabel?.text = "Autom. Nächstgelegene auswählen"
-                cell.imageView?.image = UIImage(named: "checkmark")!
             case 1:
                 cell.textLabel?.text = "Bildrechte"
+                cell.accessoryType = .DisclosureIndicator
             default:
                 break
             }
-        } else {
-            cell = UITableViewCell()
+        default:
+            break
         }
 
         return cell

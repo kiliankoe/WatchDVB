@@ -36,4 +36,20 @@ extension Stop {
 
         return Stop(id: 0, name: name, region: region, searchString: searchString, tarifZones: tarifZones, longitude: lon, latitude: lat, priority: 0)
     }
+
+    static func allSaved() -> [Stop] {
+        let savedStops = NSUserDefaults.standardUserDefaults().arrayForKey(Defaults.savedStops) as! [NSDictionary]
+        return savedStops.map {
+            Stop.fromDict($0)
+        }
+    }
+
+    static func selectedIndex() -> Int {
+        return NSUserDefaults.standardUserDefaults().integerForKey(Defaults.selectedStopIndex)
+    }
+
+    static func selected() -> Stop {
+        let selectedStopIndex = selectedIndex()
+        return allSaved()[selectedStopIndex]
+    }
 }
