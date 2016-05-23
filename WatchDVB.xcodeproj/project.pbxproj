@@ -1,1591 +1,766 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>08A986A87F25DD0EB63341DC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F762BB753141EA7D614000CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>133DF45E869D29903A14BE72</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WatchDVB.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1CA0593A3E3FDC7285CD1F88</key>
-		<dict>
-			<key>fileRef</key>
-			<string>57B3D14BA49598FAE28FFA12</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>260C8C401EC4A75D68C11709</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WatchDVB.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930492F1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3930493A1CF1D8AF001B0D67</string>
-				<string>3930494E1CF1D8AF001B0D67</string>
-				<string>3930495D1CF1D8AF001B0D67</string>
-				<string>393049391CF1D8AF001B0D67</string>
-				<string>8D6FF955EE6DE64DAF1C856C</string>
-				<string>D5F2DB1A2463653920ACD8CF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049301CF1D8AF001B0D67</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Kilian Koeltzsch</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>393049371CF1D8AF001B0D67</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>HU85FER47E</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.ApplicationGroups.iOS</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>393049491CF1D8AF001B0D67</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>393049581CF1D8AF001B0D67</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>HU85FER47E</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.ApplicationGroups.iOS</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>393049331CF1D8AF001B0D67</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>3930492F1CF1D8AF001B0D67</string>
-			<key>productRefGroup</key>
-			<string>393049391CF1D8AF001B0D67</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>393049371CF1D8AF001B0D67</string>
-				<string>393049491CF1D8AF001B0D67</string>
-				<string>393049581CF1D8AF001B0D67</string>
-			</array>
-		</dict>
-		<key>393049331CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3930496D1CF1D8AF001B0D67</string>
-				<string>3930496E1CF1D8AF001B0D67</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>393049341CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3930493E1CF1D8AF001B0D67</string>
-				<string>3930493C1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049351CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1CA0593A3E3FDC7285CD1F88</string>
-				<string>9587FADDE3DF91A32F9AA56E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049361CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>393049461CF1D8AF001B0D67</string>
-				<string>393049431CF1D8AF001B0D67</string>
-				<string>393049411CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049371CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>393049771CF1D8AF001B0D67</string>
-			<key>buildPhases</key>
-			<array>
-				<string>687122E12F67232B6894B309</string>
-				<string>393049341CF1D8AF001B0D67</string>
-				<string>393049351CF1D8AF001B0D67</string>
-				<string>393049361CF1D8AF001B0D67</string>
-				<string>393049761CF1D8AF001B0D67</string>
-				<string>6D59FCE8BF314EE972EF20E4</string>
-				<string>759EC42660C7E8304BB54255</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3930494D1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WatchDVB</string>
-			<key>productName</key>
-			<string>WatchDVB</string>
-			<key>productReference</key>
-			<string>393049381CF1D8AF001B0D67</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>393049381CF1D8AF001B0D67</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WatchDVB.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>393049391CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>393049381CF1D8AF001B0D67</string>
-				<string>3930494A1CF1D8AF001B0D67</string>
-				<string>393049591CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930493A1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3930497A1CF1DD7B001B0D67</string>
-				<string>3930493B1CF1D8AF001B0D67</string>
-				<string>3930493D1CF1D8AF001B0D67</string>
-				<string>3930493F1CF1D8AF001B0D67</string>
-				<string>393049421CF1D8AF001B0D67</string>
-				<string>393049441CF1D8AF001B0D67</string>
-				<string>393049471CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WatchDVB</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930493B1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930493C1CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3930493B1CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3930493D1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930493E1CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3930493D1CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3930493F1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>393049401CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049401CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049411CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3930493F1CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049421CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049431CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049421CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049441CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>393049451CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049451CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049461CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049441CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049471CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049481CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>393049531CF1D8AF001B0D67</string>
-				<string>393049511CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049491CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>393049731CF1D8AF001B0D67</string>
-			<key>buildPhases</key>
-			<array>
-				<string>393049481CF1D8AF001B0D67</string>
-				<string>393049721CF1D8AF001B0D67</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3930495C1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WatchDVB WatchKit App</string>
-			<key>productName</key>
-			<string>WatchDVB WatchKit App</string>
-			<key>productReference</key>
-			<string>3930494A1CF1D8AF001B0D67</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application.watchapp2</string>
-		</dict>
-		<key>3930494A1CF1D8AF001B0D67</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WatchDVB WatchKit App.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3930494B1CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3930494A1CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3930494C1CF1D8AF001B0D67</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>393049301CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>393049491CF1D8AF001B0D67</string>
-			<key>remoteInfo</key>
-			<string>WatchDVB WatchKit App</string>
-		</dict>
-		<key>3930494D1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>393049491CF1D8AF001B0D67</string>
-			<key>targetProxy</key>
-			<string>3930494C1CF1D8AF001B0D67</string>
-		</dict>
-		<key>3930494E1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3930494F1CF1D8AF001B0D67</string>
-				<string>393049521CF1D8AF001B0D67</string>
-				<string>393049541CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WatchDVB WatchKit App</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930494F1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>393049501CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Interface.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049501CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Interface.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049511CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3930494F1CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049521CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049531CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049521CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049541CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049551CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>393049651CF1D8AF001B0D67</string>
-				<string>393049631CF1D8AF001B0D67</string>
-				<string>393049691CF1D8AF001B0D67</string>
-				<string>393049611CF1D8AF001B0D67</string>
-				<string>393049671CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049561CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>08A986A87F25DD0EB63341DC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049571CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3930496B1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049581CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3930496F1CF1D8AF001B0D67</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3ED2F1CD3B82C726A4365F0A</string>
-				<string>393049551CF1D8AF001B0D67</string>
-				<string>393049561CF1D8AF001B0D67</string>
-				<string>393049571CF1D8AF001B0D67</string>
-				<string>653FF6E732E9FF2FE65B2764</string>
-				<string>6776359DFCC4527D06FFA678</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WatchDVB WatchKit Extension</string>
-			<key>productName</key>
-			<string>WatchDVB WatchKit Extension</string>
-			<key>productReference</key>
-			<string>393049591CF1D8AF001B0D67</string>
-			<key>productType</key>
-			<string>com.apple.product-type.watchkit2-extension</string>
-		</dict>
-		<key>393049591CF1D8AF001B0D67</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.app-extension</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WatchDVB WatchKit Extension.appex</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3930495A1CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049591CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>RemoveHeadersOnCopy</string>
-				</array>
-			</dict>
-		</dict>
-		<key>3930495B1CF1D8AF001B0D67</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>393049301CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>393049581CF1D8AF001B0D67</string>
-			<key>remoteInfo</key>
-			<string>WatchDVB WatchKit Extension</string>
-		</dict>
-		<key>3930495C1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>393049581CF1D8AF001B0D67</string>
-			<key>targetProxy</key>
-			<string>3930495B1CF1D8AF001B0D67</string>
-		</dict>
-		<key>3930495D1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3930497B1CF1DE80001B0D67</string>
-				<string>393049601CF1D8AF001B0D67</string>
-				<string>393049621CF1D8AF001B0D67</string>
-				<string>393049641CF1D8AF001B0D67</string>
-				<string>393049661CF1D8AF001B0D67</string>
-				<string>393049681CF1D8AF001B0D67</string>
-				<string>3930496A1CF1D8AF001B0D67</string>
-				<string>3930496C1CF1D8AF001B0D67</string>
-				<string>3930495E1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WatchDVB WatchKit Extension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930495E1CF1D8AF001B0D67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3930495F1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930495F1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>PushNotificationPayload.apns</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049601CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>InterfaceController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049611CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049601CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049621CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ExtensionDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049631CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049621CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049641CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>NotificationController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049651CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049641CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049661CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>GlanceController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049671CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049661CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>393049681CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ComplicationController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>393049691CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>393049681CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3930496A1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930496B1CF1D8AF001B0D67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3930496A1CF1D8AF001B0D67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3930496C1CF1D8AF001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930496D1CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3930496E1CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3930496F1CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>393049701CF1D8AF001B0D67</string>
-				<string>393049711CF1D8AF001B0D67</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>393049701CF1D8AF001B0D67</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>790AF976A2FAD18E8168AA71</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_COMPLICATION_NAME</key>
-				<string>Complication</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WatchDVB WatchKit Extension/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>io.kilian.WatchDVB.watchkitapp.extension</string>
-				<key>PRODUCT_NAME</key>
-				<string>${TARGET_NAME}</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>4</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>393049711CF1D8AF001B0D67</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9A5A6B5A69FBD86C6F540EE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_COMPLICATION_NAME</key>
-				<string>Complication</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WatchDVB WatchKit Extension/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>io.kilian.WatchDVB.watchkitapp.extension</string>
-				<key>PRODUCT_NAME</key>
-				<string>${TARGET_NAME}</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>4</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>393049721CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string></string>
-			<key>dstSubfolderSpec</key>
-			<string>13</string>
-			<key>files</key>
-			<array>
-				<string>3930495A1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Embed App Extensions</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049731CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>393049741CF1D8AF001B0D67</string>
-				<string>393049751CF1D8AF001B0D67</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>393049741CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>IBSC_MODULE</key>
-				<string>WatchDVB_WatchKit_Extension</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WatchDVB WatchKit App/Info.plist</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>io.kilian.WatchDVB.watchkitapp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>4</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>393049751CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>IBSC_MODULE</key>
-				<string>WatchDVB_WatchKit_Extension</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WatchDVB WatchKit App/Info.plist</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>io.kilian.WatchDVB.watchkitapp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>watchos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>4</string>
-				<key>WATCHOS_DEPLOYMENT_TARGET</key>
-				<string>2.2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>393049761CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>$(CONTENTS_FOLDER_PATH)/Watch</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>3930494B1CF1D8AF001B0D67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Embed Watch Content</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>393049771CF1D8AF001B0D67</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>393049781CF1D8AF001B0D67</string>
-				<string>393049791CF1D8AF001B0D67</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>393049781CF1D8AF001B0D67</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>260C8C401EC4A75D68C11709</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>WatchDVB/WatchDVB.entitlements</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WatchDVB/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>io.kilian.WatchDVB</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>393049791CF1D8AF001B0D67</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>133DF45E869D29903A14BE72</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>WatchDVB/WatchDVB.entitlements</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WatchDVB/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>io.kilian.WatchDVB</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3930497A1CF1DD7B001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xml</string>
-			<key>path</key>
-			<string>WatchDVB.entitlements</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3930497B1CF1DE80001B0D67</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xml</string>
-			<key>path</key>
-			<string>WatchDVB WatchKit Extension.entitlements</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3ED2F1CD3B82C726A4365F0A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>47AFEC2373F3F00B80D65311</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>57B3D14BA49598FAE28FFA12</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5A83ABB8B2E2F8EA57CA78C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_WatchDVB.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>653FF6E732E9FF2FE65B2764</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6776359DFCC4527D06FFA678</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>687122E12F67232B6894B309</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6D59FCE8BF314EE972EF20E4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>759EC42660C7E8304BB54255</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>790AF976A2FAD18E8168AA71</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WatchDVB WatchKit Extension.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8D6FF955EE6DE64DAF1C856C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>47AFEC2373F3F00B80D65311</string>
-				<string>AE8F1A3A7863B54BAB6F2BA9</string>
-				<string>790AF976A2FAD18E8168AA71</string>
-				<string>9A5A6B5A69FBD86C6F540EE8</string>
-				<string>260C8C401EC4A75D68C11709</string>
-				<string>133DF45E869D29903A14BE72</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9587FADDE3DF91A32F9AA56E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5A83ABB8B2E2F8EA57CA78C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A5A6B5A69FBD86C6F540EE8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WatchDVB WatchKit Extension.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE8F1A3A7863B54BAB6F2BA9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D5F2DB1A2463653920ACD8CF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>57B3D14BA49598FAE28FFA12</string>
-				<string>5A83ABB8B2E2F8EA57CA78C2</string>
-				<string>F762BB753141EA7D614000CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F762BB753141EA7D614000CD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_WatchDVB_WatchKit_Extension.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>393049301CF1D8AF001B0D67</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A986A87F25DD0EB63341DC /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F762BB753141EA7D614000CD /* Pods_WatchDVB_WatchKit_Extension.framework */; };
+		1CA0593A3E3FDC7285CD1F88 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B3D14BA49598FAE28FFA12 /* Pods.framework */; };
+		3930493C1CF1D8AF001B0D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */; };
+		393049411CF1D8AF001B0D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930493F1CF1D8AF001B0D67 /* Main.storyboard */; };
+		393049431CF1D8AF001B0D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393049421CF1D8AF001B0D67 /* Assets.xcassets */; };
+		393049461CF1D8AF001B0D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393049441CF1D8AF001B0D67 /* LaunchScreen.storyboard */; };
+		3930494B1CF1D8AF001B0D67 /* WatchDVB WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3930494A1CF1D8AF001B0D67 /* WatchDVB WatchKit App.app */; };
+		393049511CF1D8AF001B0D67 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930494F1CF1D8AF001B0D67 /* Interface.storyboard */; };
+		393049531CF1D8AF001B0D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393049521CF1D8AF001B0D67 /* Assets.xcassets */; };
+		3930495A1CF1D8AF001B0D67 /* WatchDVB WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 393049591CF1D8AF001B0D67 /* WatchDVB WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		393049611CF1D8AF001B0D67 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393049601CF1D8AF001B0D67 /* InterfaceController.swift */; };
+		393049631CF1D8AF001B0D67 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393049621CF1D8AF001B0D67 /* ExtensionDelegate.swift */; };
+		393049651CF1D8AF001B0D67 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393049641CF1D8AF001B0D67 /* NotificationController.swift */; };
+		393049671CF1D8AF001B0D67 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393049661CF1D8AF001B0D67 /* GlanceController.swift */; };
+		393049691CF1D8AF001B0D67 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393049681CF1D8AF001B0D67 /* ComplicationController.swift */; };
+		3930496B1CF1D8AF001B0D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3930496A1CF1D8AF001B0D67 /* Assets.xcassets */; };
+		394691FD1CF31554009102D8 /* MainOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394691FC1CF31554009102D8 /* MainOverviewController.swift */; };
+		394691FF1CF31574009102D8 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394691FE1CF31574009102D8 /* SettingsController.swift */; };
+		394692021CF316FC009102D8 /* StopSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692011CF316FC009102D8 /* StopSelectionCell.swift */; };
+		394692041CF32028009102D8 /* Stop+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692031CF32028009102D8 /* Stop+UserDefaults.swift */; };
+		394692061CF322E0009102D8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692051CF322E0009102D8 /* Defaults.swift */; };
+		394692071CF3231E009102D8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692051CF322E0009102D8 /* Defaults.swift */; };
+		394692081CF32326009102D8 /* Stop+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692031CF32028009102D8 /* Stop+UserDefaults.swift */; };
+		9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3930494C1CF1D8AF001B0D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 393049301CF1D8AF001B0D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 393049491CF1D8AF001B0D67;
+			remoteInfo = "WatchDVB WatchKit App";
+		};
+		3930495B1CF1D8AF001B0D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 393049301CF1D8AF001B0D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 393049581CF1D8AF001B0D67;
+			remoteInfo = "WatchDVB WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		393049721CF1D8AF001B0D67 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3930495A1CF1D8AF001B0D67 /* WatchDVB WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393049761CF1D8AF001B0D67 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3930494B1CF1D8AF001B0D67 /* WatchDVB WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		133DF45E869D29903A14BE72 /* Pods-WatchDVB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.release.xcconfig"; sourceTree = "<group>"; };
+		260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.debug.xcconfig"; sourceTree = "<group>"; };
+		393049381CF1D8AF001B0D67 /* WatchDVB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDVB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		393049401CF1D8AF001B0D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		393049421CF1D8AF001B0D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		393049451CF1D8AF001B0D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		393049471CF1D8AF001B0D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3930494A1CF1D8AF001B0D67 /* WatchDVB WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchDVB WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		393049501CF1D8AF001B0D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		393049521CF1D8AF001B0D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		393049541CF1D8AF001B0D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		393049591CF1D8AF001B0D67 /* WatchDVB WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDVB WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3930495F1CF1D8AF001B0D67 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		393049601CF1D8AF001B0D67 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		393049621CF1D8AF001B0D67 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		393049641CF1D8AF001B0D67 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		393049661CF1D8AF001B0D67 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		393049681CF1D8AF001B0D67 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3930496A1CF1D8AF001B0D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3930496C1CF1D8AF001B0D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3930497A1CF1DD7B001B0D67 /* WatchDVB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchDVB.entitlements; sourceTree = "<group>"; };
+		3930497B1CF1DE80001B0D67 /* WatchDVB WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchDVB WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		394691FC1CF31554009102D8 /* MainOverviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainOverviewController.swift; sourceTree = "<group>"; };
+		394691FE1CF31574009102D8 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		394692011CF316FC009102D8 /* StopSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopSelectionCell.swift; sourceTree = "<group>"; };
+		394692031CF32028009102D8 /* Stop+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stop+UserDefaults.swift"; sourceTree = "<group>"; };
+		394692051CF322E0009102D8 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		47AFEC2373F3F00B80D65311 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		57B3D14BA49598FAE28FFA12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		AE8F1A3A7863B54BAB6F2BA9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F762BB753141EA7D614000CD /* Pods_WatchDVB_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		393049351CF1D8AF001B0D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA0593A3E3FDC7285CD1F88 /* Pods.framework in Frameworks */,
+				9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393049561CF1D8AF001B0D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A986A87F25DD0EB63341DC /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3930492F1CF1D8AF001B0D67 = {
+			isa = PBXGroup;
+			children = (
+				3930493A1CF1D8AF001B0D67 /* WatchDVB */,
+				3930494E1CF1D8AF001B0D67 /* WatchDVB WatchKit App */,
+				3930495D1CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */,
+				393049391CF1D8AF001B0D67 /* Products */,
+				8D6FF955EE6DE64DAF1C856C /* Pods */,
+				D5F2DB1A2463653920ACD8CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		393049391CF1D8AF001B0D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				393049381CF1D8AF001B0D67 /* WatchDVB.app */,
+				3930494A1CF1D8AF001B0D67 /* WatchDVB WatchKit App.app */,
+				393049591CF1D8AF001B0D67 /* WatchDVB WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3930493A1CF1D8AF001B0D67 /* WatchDVB */ = {
+			isa = PBXGroup;
+			children = (
+				3930497A1CF1DD7B001B0D67 /* WatchDVB.entitlements */,
+				3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */,
+				394692051CF322E0009102D8 /* Defaults.swift */,
+				394692031CF32028009102D8 /* Stop+UserDefaults.swift */,
+				394691FC1CF31554009102D8 /* MainOverviewController.swift */,
+				394692001CF316E6009102D8 /* Settings */,
+				3930493F1CF1D8AF001B0D67 /* Main.storyboard */,
+				393049421CF1D8AF001B0D67 /* Assets.xcassets */,
+				393049441CF1D8AF001B0D67 /* LaunchScreen.storyboard */,
+				393049471CF1D8AF001B0D67 /* Info.plist */,
+			);
+			path = WatchDVB;
+			sourceTree = "<group>";
+		};
+		3930494E1CF1D8AF001B0D67 /* WatchDVB WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3930494F1CF1D8AF001B0D67 /* Interface.storyboard */,
+				393049521CF1D8AF001B0D67 /* Assets.xcassets */,
+				393049541CF1D8AF001B0D67 /* Info.plist */,
+			);
+			path = "WatchDVB WatchKit App";
+			sourceTree = "<group>";
+		};
+		3930495D1CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3930497B1CF1DE80001B0D67 /* WatchDVB WatchKit Extension.entitlements */,
+				393049601CF1D8AF001B0D67 /* InterfaceController.swift */,
+				393049621CF1D8AF001B0D67 /* ExtensionDelegate.swift */,
+				393049641CF1D8AF001B0D67 /* NotificationController.swift */,
+				393049661CF1D8AF001B0D67 /* GlanceController.swift */,
+				393049681CF1D8AF001B0D67 /* ComplicationController.swift */,
+				3930496A1CF1D8AF001B0D67 /* Assets.xcassets */,
+				3930496C1CF1D8AF001B0D67 /* Info.plist */,
+				3930495E1CF1D8AF001B0D67 /* Supporting Files */,
+			);
+			path = "WatchDVB WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3930495E1CF1D8AF001B0D67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3930495F1CF1D8AF001B0D67 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		394692001CF316E6009102D8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				394691FE1CF31574009102D8 /* SettingsController.swift */,
+				394692011CF316FC009102D8 /* StopSelectionCell.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		8D6FF955EE6DE64DAF1C856C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47AFEC2373F3F00B80D65311 /* Pods.debug.xcconfig */,
+				AE8F1A3A7863B54BAB6F2BA9 /* Pods.release.xcconfig */,
+				790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */,
+				9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */,
+				260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */,
+				133DF45E869D29903A14BE72 /* Pods-WatchDVB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5F2DB1A2463653920ACD8CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57B3D14BA49598FAE28FFA12 /* Pods.framework */,
+				5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */,
+				F762BB753141EA7D614000CD /* Pods_WatchDVB_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		393049371CF1D8AF001B0D67 /* WatchDVB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393049771CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB" */;
+			buildPhases = (
+				687122E12F67232B6894B309 /* Check Pods Manifest.lock */,
+				393049341CF1D8AF001B0D67 /* Sources */,
+				393049351CF1D8AF001B0D67 /* Frameworks */,
+				393049361CF1D8AF001B0D67 /* Resources */,
+				393049761CF1D8AF001B0D67 /* Embed Watch Content */,
+				6D59FCE8BF314EE972EF20E4 /* Embed Pods Frameworks */,
+				759EC42660C7E8304BB54255 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3930494D1CF1D8AF001B0D67 /* PBXTargetDependency */,
+			);
+			name = WatchDVB;
+			productName = WatchDVB;
+			productReference = 393049381CF1D8AF001B0D67 /* WatchDVB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		393049491CF1D8AF001B0D67 /* WatchDVB WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393049731CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB WatchKit App" */;
+			buildPhases = (
+				393049481CF1D8AF001B0D67 /* Resources */,
+				393049721CF1D8AF001B0D67 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3930495C1CF1D8AF001B0D67 /* PBXTargetDependency */,
+			);
+			name = "WatchDVB WatchKit App";
+			productName = "WatchDVB WatchKit App";
+			productReference = 3930494A1CF1D8AF001B0D67 /* WatchDVB WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		393049581CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3930496F1CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB WatchKit Extension" */;
+			buildPhases = (
+				3ED2F1CD3B82C726A4365F0A /* Check Pods Manifest.lock */,
+				393049551CF1D8AF001B0D67 /* Sources */,
+				393049561CF1D8AF001B0D67 /* Frameworks */,
+				393049571CF1D8AF001B0D67 /* Resources */,
+				653FF6E732E9FF2FE65B2764 /* Embed Pods Frameworks */,
+				6776359DFCC4527D06FFA678 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchDVB WatchKit Extension";
+			productName = "WatchDVB WatchKit Extension";
+			productReference = 393049591CF1D8AF001B0D67 /* WatchDVB WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		393049301CF1D8AF001B0D67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kilian Koeltzsch";
+				TargetAttributes = {
+					393049371CF1D8AF001B0D67 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HU85FER47E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					393049491CF1D8AF001B0D67 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					393049581CF1D8AF001B0D67 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HU85FER47E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 393049331CF1D8AF001B0D67 /* Build configuration list for PBXProject "WatchDVB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3930492F1CF1D8AF001B0D67;
+			productRefGroup = 393049391CF1D8AF001B0D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				393049371CF1D8AF001B0D67 /* WatchDVB */,
+				393049491CF1D8AF001B0D67 /* WatchDVB WatchKit App */,
+				393049581CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		393049361CF1D8AF001B0D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393049461CF1D8AF001B0D67 /* LaunchScreen.storyboard in Resources */,
+				393049431CF1D8AF001B0D67 /* Assets.xcassets in Resources */,
+				393049411CF1D8AF001B0D67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393049481CF1D8AF001B0D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393049531CF1D8AF001B0D67 /* Assets.xcassets in Resources */,
+				393049511CF1D8AF001B0D67 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393049571CF1D8AF001B0D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3930496B1CF1D8AF001B0D67 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ED2F1CD3B82C726A4365F0A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		653FF6E732E9FF2FE65B2764 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6776359DFCC4527D06FFA678 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687122E12F67232B6894B309 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D59FCE8BF314EE972EF20E4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		759EC42660C7E8304BB54255 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		393049341CF1D8AF001B0D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394692041CF32028009102D8 /* Stop+UserDefaults.swift in Sources */,
+				394691FF1CF31574009102D8 /* SettingsController.swift in Sources */,
+				3930493C1CF1D8AF001B0D67 /* AppDelegate.swift in Sources */,
+				394692061CF322E0009102D8 /* Defaults.swift in Sources */,
+				394692021CF316FC009102D8 /* StopSelectionCell.swift in Sources */,
+				394691FD1CF31554009102D8 /* MainOverviewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393049551CF1D8AF001B0D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394692081CF32326009102D8 /* Stop+UserDefaults.swift in Sources */,
+				393049651CF1D8AF001B0D67 /* NotificationController.swift in Sources */,
+				393049631CF1D8AF001B0D67 /* ExtensionDelegate.swift in Sources */,
+				393049691CF1D8AF001B0D67 /* ComplicationController.swift in Sources */,
+				394692071CF3231E009102D8 /* Defaults.swift in Sources */,
+				393049611CF1D8AF001B0D67 /* InterfaceController.swift in Sources */,
+				393049671CF1D8AF001B0D67 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3930494D1CF1D8AF001B0D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 393049491CF1D8AF001B0D67 /* WatchDVB WatchKit App */;
+			targetProxy = 3930494C1CF1D8AF001B0D67 /* PBXContainerItemProxy */;
+		};
+		3930495C1CF1D8AF001B0D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 393049581CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */;
+			targetProxy = 3930495B1CF1D8AF001B0D67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3930493F1CF1D8AF001B0D67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				393049401CF1D8AF001B0D67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		393049441CF1D8AF001B0D67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				393049451CF1D8AF001B0D67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3930494F1CF1D8AF001B0D67 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				393049501CF1D8AF001B0D67 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3930496D1CF1D8AF001B0D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3930496E1CF1D8AF001B0D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		393049701CF1D8AF001B0D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements";
+				INFOPLIST_FILE = "WatchDVB WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		393049711CF1D8AF001B0D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements";
+				INFOPLIST_FILE = "WatchDVB WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		393049741CF1D8AF001B0D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchDVB_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchDVB WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		393049751CF1D8AF001B0D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchDVB_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchDVB WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		393049781CF1D8AF001B0D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchDVB/WatchDVB.entitlements;
+				INFOPLIST_FILE = WatchDVB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		393049791CF1D8AF001B0D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133DF45E869D29903A14BE72 /* Pods-WatchDVB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchDVB/WatchDVB.entitlements;
+				INFOPLIST_FILE = WatchDVB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		393049331CF1D8AF001B0D67 /* Build configuration list for PBXProject "WatchDVB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3930496D1CF1D8AF001B0D67 /* Debug */,
+				3930496E1CF1D8AF001B0D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3930496F1CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393049701CF1D8AF001B0D67 /* Debug */,
+				393049711CF1D8AF001B0D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		393049731CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393049741CF1D8AF001B0D67 /* Debug */,
+				393049751CF1D8AF001B0D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		393049771CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393049781CF1D8AF001B0D67 /* Debug */,
+				393049791CF1D8AF001B0D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 393049301CF1D8AF001B0D67 /* Project object */;
+}

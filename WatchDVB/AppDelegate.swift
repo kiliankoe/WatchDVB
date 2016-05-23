@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import DVB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        NSUserDefaults.standardUserDefaults().registerDefaults([
+            Defaults.savedStops: [
+                Stop(id: 0, name: "Helmholtzstraße", region: "Dresden", searchString: "", tarifZones: "", longitude: 0, latitude: 0, priority: 0).toDict(),
+                Stop(id: 1, name: "Pirnaischer Platz", region: "Dresden", searchString: "", tarifZones: "", longitude: 0, latitude: 0, priority: 0).toDict()
+            ],
+            Defaults.selectedStopIndex: 1,
+            Defaults.switchOnLocation: false
+        ])
+
         return true
     }
 
@@ -40,7 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
