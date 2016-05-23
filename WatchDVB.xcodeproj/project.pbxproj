@@ -28,8 +28,6 @@
 		394692021CF316FC009102D8 /* StopSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692011CF316FC009102D8 /* StopSelectionCell.swift */; };
 		394692041CF32028009102D8 /* Stop+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692031CF32028009102D8 /* Stop+UserDefaults.swift */; };
 		394692061CF322E0009102D8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692051CF322E0009102D8 /* Defaults.swift */; };
-		394692071CF3231E009102D8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692051CF322E0009102D8 /* Defaults.swift */; };
-		394692081CF32326009102D8 /* Stop+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692031CF32028009102D8 /* Stop+UserDefaults.swift */; };
 		3946920A1CF34309009102D8 /* DepartureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692091CF34309009102D8 /* DepartureRow.swift */; };
 		9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */; };
 /* End PBXBuildFile section */
@@ -498,12 +496,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				394692081CF32326009102D8 /* Stop+UserDefaults.swift in Sources */,
 				3946920A1CF34309009102D8 /* DepartureRow.swift in Sources */,
 				393049651CF1D8AF001B0D67 /* NotificationController.swift in Sources */,
 				393049631CF1D8AF001B0D67 /* ExtensionDelegate.swift in Sources */,
 				393049691CF1D8AF001B0D67 /* ComplicationController.swift in Sources */,
-				394692071CF3231E009102D8 /* Defaults.swift in Sources */,
 				393049611CF1D8AF001B0D67 /* InterfaceController.swift in Sources */,
 				393049671CF1D8AF001B0D67 /* GlanceController.swift in Sources */,
 			);
