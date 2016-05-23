@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 Stop(id: 0, name: "Helmholtzstraße", region: "Dresden", searchString: "", tarifZones: "", longitude: 0, latitude: 0, priority: 0).toDict(),
                 Stop(id: 1, name: "Pirnaischer Platz", region: "Dresden", searchString: "", tarifZones: "", longitude: 0, latitude: 0, priority: 0).toDict()
             ],
-            Defaults.selectedStopIndex: 1,
+            Defaults.selectedStopName: "Pirnaischer Platz",
             Defaults.switchOnLocation: false
         ])
 

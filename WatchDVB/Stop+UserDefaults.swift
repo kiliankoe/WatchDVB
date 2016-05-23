@@ -44,8 +44,36 @@ extension Stop {
         }
     }
 
+    static func saveByOverwriting(all: [Stop]) {
+        let dicts = all.map { $0.toDict() }
+        NSUserDefaults.standardUserDefaults().setObject(dicts, forKey: Defaults.savedStops)
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+
+    static func forIndex(idx: Int) -> Stop {
+        return allSaved()[idx]
+    }
+
+    static func add(stop: Stop, atIndex idx: Int?) {
+        var all = allSaved()
+        if let idx = idx {
+            all.insert(stop, atIndex: idx)
+        } else {
+            all.append(stop)
+        }
+        saveByOverwriting(all)
+    }
+
+    static func removeAtIndex(idx: Int) {
+        var all = allSaved()
+        all.removeAtIndex(idx)
+        saveByOverwriting(all)
+    }
+
     static func selectedIndex() -> Int {
-        return NSUserDefaults.standardUserDefaults().integerForKey(Defaults.selectedStopIndex)
+        let all = allSaved()
+        let selectedStopName = NSUserDefaults.standardUserDefaults().stringForKey(Defaults.selectedStopName)
+        return all.indexOf { $0.name == selectedStopName } ?? -1
     }
 
     static func selected() -> Stop {

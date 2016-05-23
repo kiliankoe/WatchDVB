@@ -10,6 +10,6 @@ import Foundation
 
 struct Defaults {
     static let savedStops = "savedStops"
-    static let selectedStopIndex = "selectedStopIndex"
+    static let selectedStopName = "selectedStopName"
     static let switchOnLocation = "switchOnLocation"
 }
