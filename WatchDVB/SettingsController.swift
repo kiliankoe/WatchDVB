@@ -11,8 +11,11 @@ import DVB
 
 class SettingsController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+
+        // Making sure that just added stops are being displayed
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -79,7 +82,12 @@ class SettingsController: UITableViewController {
 
         switch indexPath.section {
         case 0:
-            break
+            if indexPath.row >= Stop.allSaved().count {
+                // This is the "Add new Stop" cell
+                performSegueWithIdentifier("showAddNewStop", sender: self)
+            } else {
+                // This is a normal stop cell
+            }
         case 1:
             switch indexPath.row {
             case 0:

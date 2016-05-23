@@ -54,7 +54,7 @@ extension Stop {
         return allSaved()[idx]
     }
 
-    static func add(stop: Stop, atIndex idx: Int?) {
+    static func add(stop: Stop, atIndex idx: Int? = nil) {
         var all = allSaved()
         if let idx = idx {
             all.insert(stop, atIndex: idx)
@@ -79,5 +79,10 @@ extension Stop {
     static func selected() -> Stop {
         let selectedStopIndex = selectedIndex()
         return allSaved()[selectedStopIndex]
+    }
+
+    static func setSelected(stop: Stop) {
+        NSUserDefaults.standardUserDefaults().setObject(stop.name, forKey: Defaults.selectedStopName)
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 }
