@@ -29,6 +29,7 @@
 		394692041CF32028009102D8 /* Stop+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692031CF32028009102D8 /* Stop+UserDefaults.swift */; };
 		394692061CF322E0009102D8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692051CF322E0009102D8 /* Defaults.swift */; };
 		3946920A1CF34309009102D8 /* DepartureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692091CF34309009102D8 /* DepartureRow.swift */; };
+		3946920C1CF34F0A009102D8 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946920B1CF34F0A009102D8 /* WatchSessionManager.swift */; };
 		9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		394692031CF32028009102D8 /* Stop+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stop+UserDefaults.swift"; sourceTree = "<group>"; };
 		394692051CF322E0009102D8 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		394692091CF34309009102D8 /* DepartureRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureRow.swift; sourceTree = "<group>"; };
+		3946920B1CF34F0A009102D8 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		47AFEC2373F3F00B80D65311 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		57B3D14BA49598FAE28FFA12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 				3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */,
 				394692051CF322E0009102D8 /* Defaults.swift */,
 				394692031CF32028009102D8 /* Stop+UserDefaults.swift */,
+				3946920B1CF34F0A009102D8 /* WatchSessionManager.swift */,
 				394691FC1CF31554009102D8 /* MainOverviewController.swift */,
 				394692001CF316E6009102D8 /* Settings */,
 				3930493F1CF1D8AF001B0D67 /* Main.storyboard */,
@@ -489,6 +492,7 @@
 				394692061CF322E0009102D8 /* Defaults.swift in Sources */,
 				394692021CF316FC009102D8 /* StopSelectionCell.swift in Sources */,
 				394691FD1CF31554009102D8 /* MainOverviewController.swift in Sources */,
+				3946920C1CF34F0A009102D8 /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Defaults.switchOnLocation: false
         ])
 
+        WatchSessionManager.shared.startSession()
+
         return true
     }
 
