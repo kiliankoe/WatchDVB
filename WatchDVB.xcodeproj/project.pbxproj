@@ -25,7 +25,6 @@
 		3930496B1CF1D8AF001B0D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3930496A1CF1D8AF001B0D67 /* Assets.xcassets */; };
 		394691FD1CF31554009102D8 /* MainOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394691FC1CF31554009102D8 /* MainOverviewController.swift */; };
 		394691FF1CF31574009102D8 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394691FE1CF31574009102D8 /* SettingsController.swift */; };
-		394692021CF316FC009102D8 /* StopSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692011CF316FC009102D8 /* StopSelectionCell.swift */; };
 		394692041CF32028009102D8 /* Stop+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692031CF32028009102D8 /* Stop+UserDefaults.swift */; };
 		394692061CF322E0009102D8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692051CF322E0009102D8 /* Defaults.swift */; };
 		3946920A1CF34309009102D8 /* DepartureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692091CF34309009102D8 /* DepartureRow.swift */; };
@@ -105,7 +104,6 @@
 		3930497B1CF1DE80001B0D67 /* WatchDVB WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchDVB WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		394691FC1CF31554009102D8 /* MainOverviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainOverviewController.swift; sourceTree = "<group>"; };
 		394691FE1CF31574009102D8 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		394692011CF316FC009102D8 /* StopSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopSelectionCell.swift; sourceTree = "<group>"; };
 		394692031CF32028009102D8 /* Stop+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stop+UserDefaults.swift"; sourceTree = "<group>"; };
 		394692051CF322E0009102D8 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		394692091CF34309009102D8 /* DepartureRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureRow.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				394691FE1CF31574009102D8 /* SettingsController.swift */,
-				394692011CF316FC009102D8 /* StopSelectionCell.swift */,
 				394692141CF37B57009102D8 /* AddNewStopController.swift */,
 				394692161CF37B85009102D8 /* ImageRightsController.swift */,
 			);
@@ -503,7 +500,6 @@
 				3930493C1CF1D8AF001B0D67 /* AppDelegate.swift in Sources */,
 				394692061CF322E0009102D8 /* Defaults.swift in Sources */,
 				394692121CF3700D009102D8 /* UIImage+Text.swift in Sources */,
-				394692021CF316FC009102D8 /* StopSelectionCell.swift in Sources */,
 				394691FD1CF31554009102D8 /* MainOverviewController.swift in Sources */,
 				3946920C1CF34F0A009102D8 /* WatchSessionManager.swift in Sources */,
 			);
