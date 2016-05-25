@@ -10,9 +10,11 @@ import Foundation
 import DVB
 
 // Hello random stranger, thanks for finding this.
-// Before you look on though, I want to warn you that this is _really_ shitty code.
-// You're welcome to fix it, but if you don't feel like it, just like I did when writing this comment,
-// please just look at something else, thanks :D
+//
+// Before you look on though, I want to warn you that this is _really_ shitty
+// code. And yes we *are* using NSUserDefaults as a database of sorts here^^
+// You're welcome to fix all of this, but if you don't feel like it, just like
+// I did when writing this comment, please just look at something else, thanks :D
 
 extension Stop {
     func toDict() -> NSDictionary {
