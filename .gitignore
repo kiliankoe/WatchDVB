@@ -1,0 +1,35 @@
+# MacOS X
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcuserdatad
+*.xccheckout
+*.xcscmblueprint
+xcuserdata/
+
+# fastlane
+DerivedData/
+test-reports/
+
+# AppCode
+.idea
+.idea/
+
+# Gradle
+.gradle/
+build/
+
+# Changelog
+changelog.txt
+
+#CodeInjection
+iOSInjectionProject/
+
+# Local podspecs
+*/Pods/Local\ Podspecs/
+*/Pods/Pods.xcodeproj/xcshareddata/xcschemes
