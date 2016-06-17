@@ -31,6 +31,10 @@
 		394692131CF3700D009102D8 /* UIImage+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692111CF3700D009102D8 /* UIImage+Text.swift */; };
 		394692151CF37B57009102D8 /* AddNewStopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692141CF37B57009102D8 /* AddNewStopController.swift */; };
 		394692171CF37B85009102D8 /* ImageRightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692161CF37B85009102D8 /* ImageRightsController.swift */; };
+		4C8036EF6AC45871FA39B8CA /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2C684A797493CF1E072929 /* Pods_WatchDVB_WatchKit_Extension.framework */; };
+		860EC0361D1480A500C0475F /* StopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860EC0351D1480A500C0475F /* StopsModel.swift */; };
+		860EC03B1D14832D00C0475F /* DeparturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860EC03A1D14832D00C0475F /* DeparturesModel.swift */; };
+		860EC03E1D14863200C0475F /* MainDeparturesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860EC03D1D14863200C0475F /* MainDeparturesViewModel.swift */; };
 		9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,7 +115,11 @@
 		394692161CF37B85009102D8 /* ImageRightsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRightsController.swift; sourceTree = "<group>"; };
 		5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		860EC0351D1480A500C0475F /* StopsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StopsModel.swift; path = Models/StopsModel.swift; sourceTree = "<group>"; };
+		860EC03A1D14832D00C0475F /* DeparturesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeparturesModel.swift; path = Models/DeparturesModel.swift; sourceTree = "<group>"; };
+		860EC03D1D14863200C0475F /* MainDeparturesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainDeparturesViewModel.swift; path = ViewModels/MainDeparturesViewModel.swift; sourceTree = "<group>"; };
 		9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		AB2C684A797493CF1E072929 /* Pods_WatchDVB_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8036EF6AC45871FA39B8CA /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +171,8 @@
 				3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */,
 				3946920B1CF34F0A009102D8 /* WatchSessionManager.swift */,
 				394691FC1CF31554009102D8 /* MainOverviewController.swift */,
+				860EC03C1D14860F00C0475F /* ViewModels */,
+				860EC0371D14815E00C0475F /* Models */,
 				394692001CF316E6009102D8 /* Settings */,
 				394692181CF386D4009102D8 /* Util */,
 				3930493F1CF1D8AF001B0D67 /* Main.storyboard */,
@@ -227,6 +238,23 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		860EC0371D14815E00C0475F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				860EC0351D1480A500C0475F /* StopsModel.swift */,
+				860EC03A1D14832D00C0475F /* DeparturesModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		860EC03C1D14860F00C0475F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				860EC03D1D14863200C0475F /* MainDeparturesViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		8D6FF955EE6DE64DAF1C856C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */,
+				AB2C684A797493CF1E072929 /* Pods_WatchDVB_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -490,13 +519,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				394692151CF37B57009102D8 /* AddNewStopController.swift in Sources */,
+				860EC0361D1480A500C0475F /* StopsModel.swift in Sources */,
 				394692041CF32028009102D8 /* Stop+UserDefaults.swift in Sources */,
 				394692171CF37B85009102D8 /* ImageRightsController.swift in Sources */,
+				860EC03E1D14863200C0475F /* MainDeparturesViewModel.swift in Sources */,
 				394691FF1CF31574009102D8 /* SettingsController.swift in Sources */,
 				3930493C1CF1D8AF001B0D67 /* AppDelegate.swift in Sources */,
 				394692061CF322E0009102D8 /* Defaults.swift in Sources */,
 				394692121CF3700D009102D8 /* UIImage+Text.swift in Sources */,
 				394691FD1CF31554009102D8 /* MainOverviewController.swift in Sources */,
+				860EC03B1D14832D00C0475F /* DeparturesModel.swift in Sources */,
 				3946920C1CF34F0A009102D8 /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
