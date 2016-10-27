@@ -13,23 +13,23 @@ class MainOverviewController: UITableViewController {
 
     var currentDepartures = [Departure]()
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         navigationItem.title = Stop.selected().name
         refreshDVB()
     }
 
-    @IBAction func refreshButtonTapped(sender: UIBarButtonItem) {
+    @IBAction func refreshButtonTapped(_ sender: UIBarButtonItem) {
         refreshDVB()
     }
 
     func refreshDVB() {
         let selectedStop = Stop.selected()
 
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         DVB.monitor(selectedStop.name, city: selectedStop.region) { (departures) in
-            NSOperationQueue.mainQueue().addOperationWithBlock({
+            OperationQueue.mainQueue().addOperationWithBlock({
                 [weak self] in
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                 self?.currentDepartures = departures
@@ -41,16 +41,16 @@ class MainOverviewController: UITableViewController {
 
 // MARK: - Table View Data Source
 extension MainOverviewController {
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currentDepartures.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("departureCell") ?? UITableViewCell(style: .Value1, reuseIdentifier: "departureCell")
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "departureCell") ?? UITableViewCell(style: .value1, reuseIdentifier: "departureCell")
 
         let dep = currentDepartures[indexPath.row]
         let title = "\(dep.line) \(dep.direction)"
@@ -63,10 +63,10 @@ extension MainOverviewController {
 
 // MARK: - Table View Delegate
 extension MainOverviewController {
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         defer {
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
 
         let departure = currentDepartures[indexPath.row]
@@ -91,8 +91,8 @@ extension MainOverviewController {
 
         notification.alertBody = text
         notification.soundName = UILocalNotificationDefaultSoundName
-        UIApplication.sharedApplication().cancelAllLocalNotifications()
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        UIApplication.shared.cancelAllLocalNotifications()
+        UIApplication.shared.scheduleLocalNotification(notification)
         print("Scheduled local notification \(notification)")
     }
 }

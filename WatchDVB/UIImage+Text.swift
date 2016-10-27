@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImage {
-    static func imageWithText(text: String, size: Double) -> UIImage {
+    static func imageWithText(_ text: String, size: Double) -> UIImage {
 
         let image = UIImage()
 
@@ -20,12 +20,12 @@ extension UIImage {
 
         var rect = CGRect(x: 0, y: 0, width: size, height: size)
 
-        image.drawInRect(rect)
+        image.draw(in: rect)
 
-        UIColor.redColor().set()
-        CGContextFillEllipseInRect(ctx, rect)
+        UIColor.red.set()
+        ctx.fillEllipse(in: rect)
 
-        let textColor: UIColor = UIColor.whiteColor()
+        let textColor: UIColor = UIColor.white
         let textFont: UIFont = UIFont(name: "Helvetica Bold", size: 12)!
 
         let textFontAttributes = [
@@ -35,7 +35,7 @@ extension UIImage {
 
         let cgsize = CGFloat(size)
         rect.offsetInPlace(dx: cgsize / 2, dy: cgsize / 2)
-        (text as NSString).drawInRect(rect, withAttributes: textFontAttributes)
+        (text as NSString).draw(in: rect, withAttributes: textFontAttributes)
 
         UIGraphicsPopContext()
 
@@ -43,6 +43,6 @@ extension UIImage {
 
         UIGraphicsEndImageContext()
 
-        return outputImage
+        return outputImage!
     }
 }

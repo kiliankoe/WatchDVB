@@ -28,7 +28,7 @@ extension Stop {
         return dict as NSDictionary
     }
 
-    static func fromDict(dict: NSDictionary) -> Stop {
+    static func fromDict(_ dict: NSDictionary) -> Stop {
         let name = dict["name"]! as! String
         let region = dict["region"]! as! String
         let searchString = dict["searchString"]! as! String
@@ -40,23 +40,23 @@ extension Stop {
     }
 
     static func allSaved() -> [Stop] {
-        let savedStops = NSUserDefaults.standardUserDefaults().arrayForKey(Defaults.savedStops) as! [NSDictionary]
+        let savedStops = UserDefaults.standard.array(forKey: Defaults.savedStops) as! [NSDictionary]
         return savedStops.map {
             Stop.fromDict($0)
         }
     }
 
-    static func saveByOverwriting(all: [Stop]) {
+    static func saveByOverwriting(_ all: [Stop]) {
         let dicts = all.map { $0.toDict() }
-        NSUserDefaults.standardUserDefaults().setObject(dicts, forKey: Defaults.savedStops)
-        NSUserDefaults.standardUserDefaults().synchronize()
+        UserDefaults.standardUserDefaults().setObject(dicts, forKey: Defaults.savedStops)
+        UserDefaults.standard.synchronize()
     }
 
-    static func forIndex(idx: Int) -> Stop {
+    static func forIndex(_ idx: Int) -> Stop {
         return allSaved()[idx]
     }
 
-    static func add(stop: Stop, atIndex idx: Int? = nil) {
+    static func add(_ stop: Stop, atIndex idx: Int? = nil) {
         var all = allSaved()
         if let idx = idx {
             all.insert(stop, atIndex: idx)
@@ -66,7 +66,7 @@ extension Stop {
         saveByOverwriting(all)
     }
 
-    static func removeAtIndex(idx: Int) {
+    static func removeAtIndex(_ idx: Int) {
         var all = allSaved()
         all.removeAtIndex(idx)
         saveByOverwriting(all)
@@ -74,7 +74,7 @@ extension Stop {
 
     static func selectedIndex() -> Int {
         let all = allSaved()
-        let selectedStopName = NSUserDefaults.standardUserDefaults().stringForKey(Defaults.selectedStopName)
+        let selectedStopName = UserDefaults.standard.string(forKey: Defaults.selectedStopName)
         return all.indexOf { $0.name == selectedStopName } ?? -1
     }
 
@@ -83,12 +83,12 @@ extension Stop {
         return allSaved()[selectedStopIndex]
     }
 
-    static func setSelected(stop: Stop) {
-        NSUserDefaults.standardUserDefaults().setObject(stop.name, forKey: Defaults.selectedStopName)
-        NSUserDefaults.standardUserDefaults().synchronize()
+    static func setSelected(_ stop: Stop) {
+        UserDefaults.standardUserDefaults().setObject(stop.name, forKey: Defaults.selectedStopName)
+        UserDefaults.standard.synchronize()
     }
 
-    static func setSelected(idx: Int) {
+    static func setSelected(_ idx: Int) {
         let stop = forIndex(idx)
         setSelected(stop)
     }

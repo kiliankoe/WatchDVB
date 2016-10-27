@@ -18,16 +18,16 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
     var deps = ["85 Löbtau", "85 Btf. Gruna", "85 Striesen"]
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         setupTable()
 
     }
 
     func setupTable() {
         table.setNumberOfRows(3, withRowType: "departureRow")
-        for (idx, dep) in deps.enumerate() {
-            if let row = table.rowControllerAtIndex(idx) as? DepartureRow {
+        for (idx, dep) in deps.enumerated() {
+            if let row = table.rowController(at: idx) as? DepartureRow {
                 row.textLabel.setText(dep)
             }
         }
@@ -37,9 +37,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
 
-        session = WCSession.defaultSession()
+        session = WCSession.default()
         session?.delegate = self
-        session?.activateSession()
+        session?.activate()
 
         session?.sendMessage(["request": "selectedStop"],
             replyHandler: { response in
@@ -55,7 +55,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         super.didDeactivate()
     }
 
-    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         print(rowIndex)
     }
 

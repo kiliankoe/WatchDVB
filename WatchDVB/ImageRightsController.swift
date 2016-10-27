@@ -10,14 +10,14 @@ import UIKit
 
 class ImageRightsController: UITableViewController {
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        switch indexPath.row {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch (indexPath as NSIndexPath).row {
         case 0:
-            let url = NSURL(string: "https://thenounproject.com/search/?q=settings&i=337734")!
-            UIApplication.sharedApplication().openURL(url)
+            let url = URL(string: "https://thenounproject.com/search/?q=settings&i=337734")!
+            UIApplication.shared.openURL(url)
         case 1:
-            let url = NSURL(string: "https://thenounproject.com/search/?q=bus&i=7190")!
-            UIApplication.sharedApplication().openURL(url)
+            let url = URL(string: "https://thenounproject.com/search/?q=bus&i=7190")!
+            UIApplication.shared.openURL(url)
         default:
             break
         }

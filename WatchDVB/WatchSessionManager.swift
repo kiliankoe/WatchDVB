@@ -13,10 +13,10 @@ import DVB
 class WatchSessionManager: NSObject, WCSessionDelegate {
     static let shared = WatchSessionManager()
 
-    private let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
+    fileprivate let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
 
-    private var validSession: WCSession? {
-        if let session = session where session.paired && session.watchAppInstalled {
+    fileprivate var validSession: WCSession? {
+        if let session = session , session.isPaired && session.isWatchAppInstalled {
             return session
         }
         return nil
@@ -24,10 +24,10 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
 
     func startSession() {
         session?.delegate = self
-        session?.activateSession()
+        session?.activate()
     }
 
-    func session(session: WCSession, didReceiveMessage message: [String: AnyObject], replyHandler: ([String: AnyObject]) -> Void) {
+    func session(_ session: WCSession, didReceiveMessage message: [String: Any], replyHandler: @escaping ([String: Any]) -> Void) {
         guard let message = message as? [String: String] else { return }
         guard let request = message["request"] else { return }
 
