@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        UserDefaults.standardUserDefaults().registerDefaults([
+        UserDefaults.standard.register(defaults: [
             Defaults.savedStops: [
                 Stop(id: 0, name: "Helmholtzstraße", region: "Dresden", searchString: "", tarifZones: "", longitude: 0, latitude: 0, priority: 0).toDict(),
                 Stop(id: 1, name: "Pirnaischer Platz", region: "Dresden", searchString: "", tarifZones: "", longitude: 0, latitude: 0, priority: 0).toDict()

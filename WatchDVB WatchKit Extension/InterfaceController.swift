@@ -11,8 +11,11 @@ import Foundation
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
-
     var session: WCSession?
+
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+
+    }
 
     @IBOutlet var table: WKInterfaceTable!
 

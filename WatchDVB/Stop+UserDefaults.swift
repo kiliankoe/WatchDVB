@@ -23,8 +23,8 @@ extension Stop {
         dict["region"] = self.region
         dict["searchString"] = self.searchString
         dict["tarifZones"] = self.tarifZones
-        dict["longitude"] = String(self.location.longitude)
-        dict["latitude"] = String(self.location.latitude)
+        dict["longitude"] = String(describing: self.location?.longitude)
+        dict["latitude"] = String(describing: self.location?.latitude)
         return dict as NSDictionary
     }
 
@@ -48,7 +48,7 @@ extension Stop {
 
     static func saveByOverwriting(_ all: [Stop]) {
         let dicts = all.map { $0.toDict() }
-        UserDefaults.standardUserDefaults().setObject(dicts, forKey: Defaults.savedStops)
+        UserDefaults.standard.set(dicts, forKey: Defaults.savedStops)
         UserDefaults.standard.synchronize()
     }
 
@@ -59,7 +59,7 @@ extension Stop {
     static func add(_ stop: Stop, atIndex idx: Int? = nil) {
         var all = allSaved()
         if let idx = idx {
-            all.insert(stop, atIndex: idx)
+            all.insert(stop, at: idx)
         } else {
             all.append(stop)
         }
@@ -68,14 +68,14 @@ extension Stop {
 
     static func removeAtIndex(_ idx: Int) {
         var all = allSaved()
-        all.removeAtIndex(idx)
+        all.remove(at: idx)
         saveByOverwriting(all)
     }
 
     static func selectedIndex() -> Int {
         let all = allSaved()
         let selectedStopName = UserDefaults.standard.string(forKey: Defaults.selectedStopName)
-        return all.indexOf { $0.name == selectedStopName } ?? -1
+        return all.index { $0.name == selectedStopName } ?? -1
     }
 
     static func selected() -> Stop {
@@ -84,7 +84,7 @@ extension Stop {
     }
 
     static func setSelected(_ stop: Stop) {
-        UserDefaults.standardUserDefaults().setObject(stop.name, forKey: Defaults.selectedStopName)
+        UserDefaults.standard.set(stop.name, forKey: Defaults.selectedStopName)
         UserDefaults.standard.synchronize()
     }
 

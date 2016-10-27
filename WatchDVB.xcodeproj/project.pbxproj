@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3DD955C0099709916918AA /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A31A4B59F9359F0ED08EB6E /* Pods_WatchDVB_WatchKit_Extension.framework */; };
 		3930493C1CF1D8AF001B0D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */; };
 		393049411CF1D8AF001B0D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930493F1CF1D8AF001B0D67 /* Main.storyboard */; };
 		393049431CF1D8AF001B0D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393049421CF1D8AF001B0D67 /* Assets.xcassets */; };
@@ -31,7 +32,7 @@
 		394692131CF3700D009102D8 /* UIImage+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692111CF3700D009102D8 /* UIImage+Text.swift */; };
 		394692151CF37B57009102D8 /* AddNewStopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692141CF37B57009102D8 /* AddNewStopController.swift */; };
 		394692171CF37B85009102D8 /* ImageRightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394692161CF37B85009102D8 /* ImageRightsController.swift */; };
-		9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */; };
+		77C89D2592872D5EC4E6F916 /* Pods_WatchDVB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AED0198E66B639CA495B31 /* Pods_WatchDVB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +78,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		133DF45E869D29903A14BE72 /* Pods-WatchDVB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.release.xcconfig"; sourceTree = "<group>"; };
-		260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.debug.xcconfig"; sourceTree = "<group>"; };
 		393049381CF1D8AF001B0D67 /* WatchDVB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDVB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3930493B1CF1D8AF001B0D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		393049401CF1D8AF001B0D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,17 +108,27 @@
 		394692111CF3700D009102D8 /* UIImage+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Text.swift"; sourceTree = "<group>"; };
 		394692141CF37B57009102D8 /* AddNewStopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewStopController.swift; sourceTree = "<group>"; };
 		394692161CF37B85009102D8 /* ImageRightsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRightsController.swift; sourceTree = "<group>"; };
-		5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		63AED0198E66B639CA495B31 /* Pods_WatchDVB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA29AD3C7E7D463E2B7FA8E /* Pods-WatchDVB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.release.xcconfig"; sourceTree = "<group>"; };
+		7A31A4B59F9359F0ED08EB6E /* Pods_WatchDVB_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDVB_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		858A3A0CEEBC2700644B36A8 /* Pods-WatchDVB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB.debug.xcconfig"; sourceTree = "<group>"; };
+		9349588C5EF9325C9FB4DA8A /* Pods-WatchDVB WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		978D0DE14979FC9A6231A472 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDVB WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0ACF0AD416C82C810764E8D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		393049351CF1D8AF001B0D67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9587FADDE3DF91A32F9AA56E /* Pods_WatchDVB.framework in Frameworks */,
+				77C89D2592872D5EC4E6F916 /* Pods_WatchDVB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3DD955C0099709916918AA /* Pods_WatchDVB_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +150,8 @@
 				3930494E1CF1D8AF001B0D67 /* WatchDVB WatchKit App */,
 				3930495D1CF1D8AF001B0D67 /* WatchDVB WatchKit Extension */,
 				393049391CF1D8AF001B0D67 /* Products */,
-				8D6FF955EE6DE64DAF1C856C /* Pods */,
-				D5F2DB1A2463653920ACD8CF /* Frameworks */,
+				6FE88E46826BBFE7B7D458A3 /* Pods */,
+				E15F930BE680D03BE16DB0E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,21 +237,22 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
-		8D6FF955EE6DE64DAF1C856C /* Pods */ = {
+		6FE88E46826BBFE7B7D458A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */,
-				9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */,
-				260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */,
-				133DF45E869D29903A14BE72 /* Pods-WatchDVB.release.xcconfig */,
+				858A3A0CEEBC2700644B36A8 /* Pods-WatchDVB.debug.xcconfig */,
+				6CA29AD3C7E7D463E2B7FA8E /* Pods-WatchDVB.release.xcconfig */,
+				978D0DE14979FC9A6231A472 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */,
+				9349588C5EF9325C9FB4DA8A /* Pods-WatchDVB WatchKit Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D5F2DB1A2463653920ACD8CF /* Frameworks */ = {
+		E15F930BE680D03BE16DB0E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A83ABB8B2E2F8EA57CA78C2 /* Pods_WatchDVB.framework */,
+				63AED0198E66B639CA495B31 /* Pods_WatchDVB.framework */,
+				7A31A4B59F9359F0ED08EB6E /* Pods_WatchDVB_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,13 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 393049771CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB" */;
 			buildPhases = (
-				687122E12F67232B6894B309 /* Check Pods Manifest.lock */,
+				914B54821A92FFC1661B2207 /* [CP] Check Pods Manifest.lock */,
 				393049341CF1D8AF001B0D67 /* Sources */,
 				393049351CF1D8AF001B0D67 /* Frameworks */,
 				393049361CF1D8AF001B0D67 /* Resources */,
 				393049761CF1D8AF001B0D67 /* Embed Watch Content */,
-				6D59FCE8BF314EE972EF20E4 /* Embed Pods Frameworks */,
-				759EC42660C7E8304BB54255 /* Copy Pods Resources */,
+				8CE2B71537EF1D0CC1E89D86 /* [CP] Embed Pods Frameworks */,
+				A08B025B0108F048B130F3A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +288,7 @@
 			buildPhases = (
 				393049481CF1D8AF001B0D67 /* Resources */,
 				393049721CF1D8AF001B0D67 /* Embed App Extensions */,
+				0ACF0AD416C82C810764E8D9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,12 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3930496F1CF1D8AF001B0D67 /* Build configuration list for PBXNativeTarget "WatchDVB WatchKit Extension" */;
 			buildPhases = (
-				3ED2F1CD3B82C726A4365F0A /* Check Pods Manifest.lock */,
+				CFB7A5670F4CA599C48B4325 /* [CP] Check Pods Manifest.lock */,
 				393049551CF1D8AF001B0D67 /* Sources */,
 				393049561CF1D8AF001B0D67 /* Frameworks */,
 				393049571CF1D8AF001B0D67 /* Resources */,
-				653FF6E732E9FF2FE65B2764 /* Embed Pods Frameworks */,
-				6776359DFCC4527D06FFA678 /* Copy Pods Resources */,
+				71442D5F413163B79CFB194C /* [CP] Embed Pods Frameworks */,
+				71B5C2CEC4E72C0BF70E68B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,29 +407,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3ED2F1CD3B82C726A4365F0A /* Check Pods Manifest.lock */ = {
+		71442D5F413163B79CFB194C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		653FF6E732E9FF2FE65B2764 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,14 +422,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6776359DFCC4527D06FFA678 /* Copy Pods Resources */ = {
+		71B5C2CEC4E72C0BF70E68B7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,29 +437,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB WatchKit Extension/Pods-WatchDVB WatchKit Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		687122E12F67232B6894B309 /* Check Pods Manifest.lock */ = {
+		8CE2B71537EF1D0CC1E89D86 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6D59FCE8BF314EE972EF20E4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,19 +452,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		759EC42660C7E8304BB54255 /* Copy Pods Resources */ = {
+		914B54821A92FFC1661B2207 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A08B025B0108F048B130F3A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDVB/Pods-WatchDVB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB7A5670F4CA599C48B4325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -646,7 +658,7 @@
 		};
 		393049701CF1D8AF001B0D67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 790AF976A2FAD18E8168AA71 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 978D0DE14979FC9A6231A472 /* Pods-WatchDVB WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements";
@@ -658,13 +670,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
 		393049711CF1D8AF001B0D67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A5A6B5A69FBD86C6F540EE8 /* Pods-WatchDVB WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 9349588C5EF9325C9FB4DA8A /* Pods-WatchDVB WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDVB WatchKit Extension/WatchDVB WatchKit Extension.entitlements";
@@ -676,7 +688,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -692,7 +704,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -708,17 +720,18 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
 		393049781CF1D8AF001B0D67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 260C8C401EC4A75D68C11709 /* Pods-WatchDVB.debug.xcconfig */;
+			baseConfigurationReference = 858A3A0CEEBC2700644B36A8 /* Pods-WatchDVB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WatchDVB/WatchDVB.entitlements;
 				INFOPLIST_FILE = WatchDVB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -728,11 +741,12 @@
 		};
 		393049791CF1D8AF001B0D67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 133DF45E869D29903A14BE72 /* Pods-WatchDVB.release.xcconfig */;
+			baseConfigurationReference = 6CA29AD3C7E7D463E2B7FA8E /* Pods-WatchDVB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WatchDVB/WatchDVB.entitlements;
 				INFOPLIST_FILE = WatchDVB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.WatchDVB;
 				PRODUCT_NAME = "$(TARGET_NAME)";

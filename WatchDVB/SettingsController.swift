@@ -60,7 +60,7 @@ class SettingsController: UITableViewController {
             } else {
                 // This is a normal stop cell
                 cell.textLabel?.text = Stop.allSaved()[indexPath.row].description
-                cell.accessoryType = Stop.selectedIndex() == indexPath.row ? .Checkmark : .None
+                cell.accessoryType = Stop.selectedIndex() == indexPath.row ? .checkmark : .none
             }
         case 1:
             switch (indexPath as NSIndexPath).row {

@@ -8,55 +8,41 @@
 
 import Foundation
 
-//extension DVB {
-/**
- Send a GET request.
-
- - parameter request:    the request to be sent
- - parameter raw:        bool flag that if true ensures raw data and not JSON to be returned
- - parameter completion: handler provided with a result
- */
-func get(request: NSMutableURLRequest, raw: Bool = false, completion: (Result<AnyObject, DVBError>) -> Void) {
-    dataTask(request, method: "GET", raw: raw, completion: completion)
+/// Send a GET request
+///
+/// - parameter url:        URL
+/// - parameter raw:        skip JSON deserialization and return raw data instead
+/// - parameter completion: handler provided with result
+func get(_ url: Foundation.URL, raw: Bool = false, completion: @escaping (Result<Any, DVBError>) -> Void) {
+    var request = URLRequest(url: url)
+    request.httpMethod = "GET"
+    dataTask(request: request, raw: raw, completion: completion)
 }
 
-/**
- Send a NSURLSession dataTask with a given request
+/// Send a NSURLSession dataTask with a given request
+///
+/// - parameter request:    request to send
+/// - parameter raw:        skip JSON deserialization and return raw data instead
+/// - parameter completion: handler provided with result
+private func dataTask(request: URLRequest, raw: Bool, completion: @escaping (Result<Any, DVBError>) -> Void) {
+    let session = URLSession(configuration: .default)
+    session.dataTask(with: request) { data, response, error in
+        guard let data = data else { completion(.failure(error: .request)); return }
 
- - parameter request:    the request to be sent
- - parameter method:     what HTTP method to use
- - parameter raw:        bool flag that if true ensures raw data and not JSON to be returned
- - parameter completion: handler provided with a result
- */
-private func dataTask(request: NSMutableURLRequest, method: String, raw: Bool, completion: (Result<AnyObject, DVBError>) -> Void) {
-    request.HTTPMethod = method
-
-    let session = NSURLSession(configuration: .defaultSessionConfiguration())
-    session.dataTaskWithRequest(request) { (data, response, error) in
-
-        guard let data = data else {
-            completion(.Failure(error: .Request))
-            return
-        }
-
-        guard 200 ... 299 ~= (response as! NSHTTPURLResponse).statusCode else {
-            completion(.Failure(error: .Server(statusCode: (response as! NSHTTPURLResponse).statusCode)))
+        if let resp = response as? HTTPURLResponse, resp.statusCode / 100 != 2 {
+            completion(.failure(error: .server(statusCode: resp.statusCode)))
             return
         }
 
         if raw {
-            completion(.Success(value: data))
+            completion(.success(value: data))
             return
         }
 
-        let rawJson = try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+        let rawJson = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
 
-        guard let json = rawJson else {
-            completion(.Failure(error: .JSON))
-            return
-        }
+        guard let json = rawJson else { completion(.failure(error: .decode)); return }
 
-        completion(.Success(value: json))
+        completion(.success(value: json))
     }.resume()
 }
-//}

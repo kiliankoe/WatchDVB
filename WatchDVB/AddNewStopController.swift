@@ -43,7 +43,7 @@ class AddNewStopController: UITableViewController, UISearchResultsUpdating {
 
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
-            results = DVB.find(searchText)
+            results = DVB.find(query: searchText)
             tableView.reloadData()
         }
     }

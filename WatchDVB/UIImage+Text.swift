@@ -34,7 +34,7 @@ extension UIImage {
         ]
 
         let cgsize = CGFloat(size)
-        rect.offsetInPlace(dx: cgsize / 2, dy: cgsize / 2)
+//        rect.offsetInPlace(dx: cgsize / 2, dy: cgsize / 2)
         (text as NSString).draw(in: rect, withAttributes: textFontAttributes)
 
         UIGraphicsPopContext()

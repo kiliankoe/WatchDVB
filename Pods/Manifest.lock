@@ -1,13 +1,28 @@
 PODS:
-  - DVB (0.6.1):
-    - Kanna (~> 1.0.6)
-  - Kanna (1.0.6)
+  - DVB (1.0.0):
+    - Kanna (~> 2.0)
+    - STRegex (~> 0.4)
+  - Kanna (2.0.0)
+  - STRegex (0.4.2)
 
 DEPENDENCIES:
-  - DVB (~> 0.6.1)
+  - DVB (from `git@github.com:kiliankoe/DVB.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  DVB:
+    :branch: master
+    :git: git@github.com:kiliankoe/DVB.git
+
+CHECKOUT OPTIONS:
+  DVB:
+    :commit: 5118c4ea7df19a032af62cf7afc61154a8f6373e
+    :git: git@github.com:kiliankoe/DVB.git
 
 SPEC CHECKSUMS:
-  DVB: bee3a099f002f5098b8c7d9bcb775b2cd77e112b
-  Kanna: 9f30945bbd293a609f698ea164687ccc0990ff60
+  DVB: f0210063c5163b82e47f30b861027d72adf20c0c
+  Kanna: 9a6637f72f5c77fe9c045b1efb2a5bb074754af8
+  STRegex: 9b6e0a4300c8442d1aa93241c895eeec4cc56935
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 4996ff406f163f7fb00b58e85e672e8455374893
+
+COCOAPODS: 1.1.1

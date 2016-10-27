@@ -8,15 +8,13 @@
 
 import Foundation
 
-/**
- Error type used by DVB
-
- - Request: There's something wrong with the request being sent
- - Server:  The server returned an error or no data, statusCode is included in error
- - JSON:    The returned JSON data is malformed
- */
-enum DVBError: ErrorType {
-    case Request
-    case Server(statusCode: Int)
-    case JSON
+/// Error type used by DVB
+///
+/// - request: There's something wrong with the request being sent
+/// - server:  The server returned an error or no data, see statusCode
+/// - decode:  The returned data is malformed and could not be decoded
+public enum DVBError: Error {
+    case request
+    case server(statusCode: Int)
+    case decode
 }

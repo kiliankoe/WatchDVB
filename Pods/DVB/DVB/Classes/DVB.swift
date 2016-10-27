@@ -8,153 +8,122 @@
 
 import Foundation
 import Kanna
+import MapKit
 
 /// DVB offers static functions to interact with all the different endpoints.
 public class DVB {
 
-    /**
-     List all departures from a given stop.
+    /// List all departures from a given stop
+    ///
+    /// - parameter stop:       name of the stop
+    /// - parameter city:       optional city, defaults to Dresden
+    /// - parameter line:       optional filter for returning only departures of a specific line or list of lines
+    /// - parameter offset:     optional offset for the time until a departure arrives
+    /// - parameter modes:      optional list of allowed modes of transport, defaults to 'normal' things like buses and trams
+    /// - parameter completion: handler provided with list of departures and optional error
+    public static func departures(_ stop: String, city: String = "", line: [String]? = nil, offset: Int = 0, modes: [TransportMode.Departure] = [], completion: @escaping ([Departure], DVBError?) -> Void) {
 
-     - parameter stop:       name of the stop
-     - parameter city:       optional city, defaults to Dresden
-     - parameter line:       optional filter for returning only departures of a specific line or list of lines
-     - parameter limit:      optional maximum amount of results, defaults to as many as possible
-     - parameter offset:     optional offset for the time until a departure arrives
-     - parameter mode:       optional list of modes of transport, defaults to 'normal' things like buses and trams
-     - parameter completion: handler provided with list of departures, may be empty if error occurs.
+        let url = URL.VVO.departures(hst: stop, vz: offset, ort: city, lim: 0, vm: modes).url()
 
-     - warning: Even when a `limit` is supplied, you're not guaranteed to receive that many results.
-     */
-    public static func monitor(stop: String, city: String? = nil, line: [String]? = nil, limit: Int? = nil, offset: Int? = nil, modes: [TransportMode.Monitor]? = nil, completion: ([Departure]) -> Void) {
-        let hst = stop
-        let vz = offset ?? 0
-        let ort = city ?? ""
-        let lim = 0
-        let vm = modes ?? []
-        let request = NSMutableURLRequest(URL: URL.VVO.Monitor(hst: hst, vz: vz, ort: ort, lim: lim, vm: vm).create())
-
-        get(request) { (result) in
+        get(url) { (result) in
             switch result {
-            case .Failure(let error):
-                print("DVB failed with error: \(error)")
-                completion([])
-            case .Success(let value):
-                guard let departureList = value as? [[String]] else {
-                    completion([])
-                    return
-                }
-
-                // Map Departure structs
-                var departures = departureList.map {
-                    Departure(line: $0[0], direction: $0[1], minutesUntil: Int($0[2]) ?? 0)
-                }
+            case .failure(let error):
+                completion([], error)
+            case .success(let json):
+                guard let list = json as? [Any] else { completion([], .decode); return }
+                var departures = list.map(Departure.init).flatMap {$0}
 
                 // Filter out non-requested lines if line filter is set
                 if let line = line {
                     departures = departures.filter { return line.contains($0.line) }
                 }
 
-                // Return only given limit amount if limit is set
-                if var limit = limit {
-                    if limit > departures.count {
-                        limit = departures.count
-                    } else if limit < 0 {
-                        limit = 0
-                    }
-                    departures = Array(departures[0 ..< limit])
-                }
-
-                completion(departures)
+                completion(departures, nil)
             }
         }
     }
 
-    /**
-     Find a list of stops with a given search string.
+    /// A list of all stops in the VVO network
+    public static var allVVOStops: [Stop] = {
+        let dvbBundle = Bundle(for: DVB.self)
 
-     - parameter searchString: string to search by
-     - parameter region:       optional region, defaults to `Dresden`
+        guard let vvostopsPath = dvbBundle.path(forResource: "VVOStops", ofType: "plist"),
+        let allStops = NSArray(contentsOfFile: vvostopsPath) as? [[String:String]] else { return [] }
 
-     - returns: list of stops that match the search string
-     */
-    public static func find(searchString: String, region: String = "Dresden") -> [Stop] {
-        let dvbBundle = NSBundle(forClass: DVB.self)
-        guard let vvostopsPath = dvbBundle.pathForResource("VVOStops", ofType: "plist"),
-            let allStops = NSArray(contentsOfFile: vvostopsPath) else { return [] }
+        return allStops.map(Stop.init(dict:)).flatMap {$0}
+    }()
 
-        var stops = [Stop]()
-
-        for stopElement in allStops {
-
-            // FIXME: Improve on this... A lot!
-            let id = (stopElement["id"] as! NSString).integerValue
-            let name = stopElement["name"] as! String
-            let region = stopElement["region"] as! String
-            let searchString = stopElement["searchstring"] as! String
-            let tarifZones = stopElement["tarif_zones"] as? String ?? ""
-            let longitude = (stopElement["longitude"] as! NSString).doubleValue
-            let latitude = (stopElement["latitude"] as! NSString).doubleValue
-            let priority = (stopElement["priority"] as! NSString).integerValue
-
-            let stop = Stop(id: id, name: name, region: region, searchString: searchString, tarifZones: tarifZones, longitude: longitude, latitude: latitude, priority: priority)
-            stops.append(stop)
+    /// Find a list of stops with a given search string.
+    ///
+    /// - parameter query:  query
+    /// - parameter region: region, defaults to 'Dresden'
+    ///
+    /// - returns: list of stops that match the query
+    public static func find(query: String, region: String = "Dresden") -> [Stop] {
+        let query = query.lowercased()
+        let foundStops = allVVOStops.filter { stop in
+            let match = stop.searchString.lowercased().contains(query) || stop.name.lowercased().contains(query)
+            return match && stop.region == region
         }
 
-        var foundStops = stops.filter { stop in
-            let nameMatch = stop.searchString.lowercaseString.containsString(searchString.lowercaseString) || stop.name.lowercaseString.containsString(searchString.lowercaseString)
-            return nameMatch && stop.region == region
-        }
-
-        foundStops.sortInPlace { $0.priority > $1.priority }
-
-        return foundStops
+        return foundStops.sorted { $0.priority > $1.priority }
     }
 
-    /**
-     List current route changes in the network.
+    /// Find a list of stops with their distance to a set of coordinates in a given radius.
+    ///
+    /// - parameter latitude:  latitude
+    /// - parameter longitude: longitude
+    /// - parameter radius:    search radius in meters, defaults to 1000 (1km)
+    ///
+    /// - returns: list of stops and their distance from the given coordinates, limited to the search radius
+    public static func findNear(latitude: Double, longitude: Double, radius: Double = 1000) -> [(Stop, Double)] {
+        let searchLocation = CLLocation(latitude: latitude, longitude: longitude)
 
-     - parameter completion: handler provided with a date object when the data was last updated and a list of changes.
-     */
-    public static func routeChanges(completion: (updated: NSDate?, routeChanges: [RouteChange]) -> Void) {
+        return allVVOStops.map { stop in
+            guard let loc = stop.location else { return nil }
+            let stopLoc = CLLocation(latitude: loc.latitude, longitude: loc.longitude)
+            return (stop, searchLocation.distance(from: stopLoc))
+        }.flatMap {
+            $0
+        }.filter { tuple in
+            tuple.1 <= radius
+        }
+    }
 
-        let request = NSMutableURLRequest(URL: URL.DVB.Routechanges.create())
-
-        get(request, raw: true) { (result) in
+    /// List current route changes in the network.
+    ///
+    /// - parameter completion: handler provided with a date last updated, a list of current route changes
+    public static func routeChanges(_ completion: @escaping (Date?, [RouteChange], DVBError?) -> Void) {
+        get(URL.DVB.routechanges.url(), raw: true) { (result) in
             switch result {
-            case .Failure(let error):
-                print("DVB failed with error: \(error)")
-                completion(updated: nil, routeChanges: [])
-            case .Success(let value):
+            case .failure(let error):
+                completion(nil, [], error)
+            case .success(let value):
 
-                guard let value = value as? NSData else {
-                    completion(updated: nil, routeChanges: [])
-                    return
-                }
-
-                guard let xml = Kanna.XML(xml: value, encoding: NSUTF8StringEncoding) else {
-                    completion(updated: nil, routeChanges: [])
+                guard let value = value as? Data, let xml = Kanna.XML(xml: value, encoding: .utf8) else {
+                    completion(nil, [], .decode)
                     return
                 }
 
                 let dateString = xml.at_xpath("//lastBuildDate")?.text
-                let updatedDate: NSDate?
+                let updatedDate: Date?
 
                 if let dateString = dateString {
-                    let dateFormatter = NSDateFormatter()
+                    let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "E, dd MMMM y HH:mm:ss XX"
-                    updatedDate = dateFormatter.dateFromString(dateString)
+                    updatedDate = dateFormatter.date(from: dateString)
                 } else {
                     updatedDate = nil
                 }
 
-                var items = [RouteChange]()
-                for item in xml.xpath("//item") {
-                    if let title = item.at_xpath("title")?.text, let details = item.at_xpath("description")?.text {
-                        items.append(RouteChange(title: title, rawDetails: details))
+                let items = xml.xpath("//item").map { item -> RouteChange? in
+                    guard let title = item.at_xpath("title")?.text, let details = item.at_xpath("description")?.text else {
+                        return nil
                     }
-                }
+                    return RouteChange(title: title, rawDetails: details)
+                }.flatMap {$0}
 
-                completion(updated: updatedDate, routeChanges: items)
+                completion(updatedDate, items, nil)
             }
         }
     }

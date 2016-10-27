@@ -28,13 +28,13 @@ class MainOverviewController: UITableViewController {
         let selectedStop = Stop.selected()
 
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        DVB.monitor(selectedStop.name, city: selectedStop.region) { (departures) in
-            OperationQueue.mainQueue().addOperationWithBlock({
+        DVB.departures(selectedStop.name, city: selectedStop.region) { (departures) in
+            OperationQueue.main.addOperation {
                 [weak self] in
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-                self?.currentDepartures = departures
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                self?.currentDepartures = departures.0
                 self?.tableView.reloadData()
-            })
+            }
         }
     }
 }
@@ -70,19 +70,19 @@ extension MainOverviewController {
         }
 
         let departure = currentDepartures[indexPath.row]
-        let notificationOffset = 10 // minutes
+        let notificationOffset: UInt = 10 // minutes
 
         // No need scheduling a notification if the departure is about to leave
         guard departure.minutesUntil > notificationOffset else { return }
 
         let notification = UILocalNotification()
-        notification.fireDate = departure.leavingDate.dateByAddingTimeInterval(-1 * Double(notificationOffset) * 60)
+        notification.fireDate = departure.leavingDate.addingTimeInterval(-1 * Double(notificationOffset) * 60)
 
         var text = ""
         switch departure.type {
-        case .Some(.Stadtbus):
+        case .some(.bus):
             text += "Dein Bus "
-        case .Some(.Strassenbahn):
+        case .some(.tram):
             text += "Deine Bahn "
         default:
             text += "Deine Verbindung "

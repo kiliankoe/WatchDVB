@@ -8,97 +8,56 @@
 
 import Foundation
 
-/**
- *  A bus, tram or whatever leaving a specific stop at a specific time.
- */
+/// A bus, tram or whatever leaving a specific stop at a specific time
 public struct Departure {
 
-    /// Line identifier, e.g. "3", "85" or "EV3".
+    /// Line identifier, e.g. "3", "85" or "EV3"
     public let line: String
 
     /// Type of the Departure
-    public var type: TransportMode.Monitor? {
-        return parseType()
+    /// - warning: This is only a best guess approximation and might fail. Substitute lines are especially hard.
+    ///   Should you ever find inconsistencies (especially if nil is returned), please tell me about it and open an issue. Thanks! 🙂
+    ///   https://github.com/kiliankoe/DVB/issues/new
+    public var type: TransportMode.Departure? {
+        return TransportMode.Departure(line: line)
     }
 
-    /// Destination of the departure, e.g. "Bühlau" or "Wilder Mann".
+    /// Destination of the departure, e.g. "Bühlau", "Wilder Mann" etc.
     public let direction: String
 
-    /// How many minutes until the departure leaves.
-    public let minutesUntil: Int
+    /// How many minutes until the departure leaves
+    public let minutesUntil: UInt
 
-    /// Convenience getter for minutesUntil as NSDate
-    public var leavingDate: NSDate {
-        return NSDate().dateByAddingTimeInterval(Double(minutesUntil) * 60)
+    /// Convenience getter for minutesUntil as Date
+    public var leavingDate: Date {
+        return Date().addingTimeInterval(Double(minutesUntil) * 60)
     }
 
-    /**
-     Init a Departure
-
-     - parameter line:         Line identifier, e.g. "3", "85" or "EV3".
-     - parameter direction:    Destination of the departure, e.g. "Bühlau" or "Wilder Mann".
-     - parameter minutesUntil: How many minutes until the departure leaves.
-
-     - returns: new Departure
-     */
-    public init(line: String, direction: String, minutesUntil: Int) {
+    /// Initialize a Departure
+    ///
+    /// - parameter line:         Line identifier, e.g. "3", "85", "EV7", etc.
+    /// - parameter direction:    Destination of the departure, e.g. "Bühlau", "Wilder Mann", etc.
+    /// - parameter minutesUntil: Minutes until departure
+    ///
+    /// - returns: Departure
+    public init(line: String, direction: String, minutesUntil: UInt) {
         self.line = line
         self.direction = direction
         self.minutesUntil = minutesUntil
     }
 
-    /**
-     Use some magic to try to identify the type of the departure by it's line identifier.
+    /// Internal convenience initializer from a JSON object
+    ///
+    /// - parameter json: JSON object
+    ///
+    /// - returns: Departure
+    init?(json: Any) {
+        guard let list = json as? [String] else { return nil }
+        guard list.count >= 3 else { return nil }
 
-     - returns: type
-     */
-    private func parseType() -> TransportMode.Monitor? {
-
-        if let line = Int(line) {
-            switch line {
-            case 0 ... 20:
-                return .Strassenbahn
-            case 21 ..< 100:
-                return .Stadtbus
-            case 100 ... 1000:
-                return .Regionalbus
-            default:
-                return nil
-            }
-        }
-
-        // The next two are not necessarily always true. Not clue how this could possibly tell though.
-
-        if let _ = line.rangeOfString("^E\\d", options: .RegularExpressionSearch) {
-            return .Strassenbahn
-        }
-
-        if let _ = line.rangeOfString("^E\\d\\d", options: .RegularExpressionSearch) {
-            return .Stadtbus
-        }
-
-        if let _ = line.rangeOfString("^F", options: .RegularExpressionSearch) {
-            return .Faehre
-        }
-
-        if let _ = line.rangeOfString("(^RE|^IC|^TL|^RB)", options: .RegularExpressionSearch) {
-            return .Zug
-        }
-
-        if let _ = line.rangeOfString("^S", options: .RegularExpressionSearch) {
-            return .SBahn
-        }
-
-        if let _ = line.rangeOfString("alita", options: .RegularExpressionSearch) {
-            // I believe this to be correct, but haven't been able to verify it :D
-            return .ASTRufbus
-        }
-
-        if line == "SWB" {
-            return .SeilSchwebebahn
-        }
-
-        return nil
+        self.line = list[0]
+        self.direction = list[1]
+        self.minutesUntil = UInt(list[2]) ?? 0
     }
 }
 

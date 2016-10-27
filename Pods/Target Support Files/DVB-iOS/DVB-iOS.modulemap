@@ -1,0 +1,6 @@
+framework module DVB {
+  umbrella header "DVB-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

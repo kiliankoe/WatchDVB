@@ -13,6 +13,18 @@ import DVB
 class WatchSessionManager: NSObject, WCSessionDelegate {
     static let shared = WatchSessionManager()
 
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+
+    }
+
+    func sessionDidBecomeInactive(_ session: WCSession) {
+
+    }
+
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+
     fileprivate let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
 
     fileprivate var validSession: WCSession? {
